@@ -9,16 +9,40 @@
   --white: #fff;
   --mainColor: #4263eb; /* l: #5c7cfa   d: #364fc7*/
   --grayBackground: #f2f2f7;
+  --border: #D9D9D9;
 }
 
 body {
   font-family: 'Inter', sans-serif;
   background-color: var(--white);
+  color: var(--black);
   overflow-x: hidden;
 }
 
 
 
+.container-btnDark {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  border-radius: 12px;
+  height: 3rem;
+  width: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.085);
+}
+.container-btnDark button {
+  border: none;
+  background: none;
+}
+.iconDark {
+  stroke: var(--black);
+  width: 24px;
+}
 
 /* SECTION WELCOME */
 .section-welcome {
