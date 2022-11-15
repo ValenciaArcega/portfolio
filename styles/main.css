@@ -48,7 +48,7 @@ body {
 }
 
 .section-welcome-text-container {
-  margin-top: 1.3rem;
+  margin-top: 1.6rem;
   height: 60%;
   width: 85%;
   color: var(--black);
@@ -60,7 +60,7 @@ body {
 }
 
 .section-welcome-text-container p {
-  margin-top: .5rem;
+  margin-top: .2rem;
   font-size: 1.7rem;
   letter-spacing: -1px;
   line-height: 1.5;
@@ -70,14 +70,14 @@ body {
 
 /* KNOWLEDGES */
 .section-knowledges {
-  margin-top: 7rem;
+  margin-top: 8rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .section-knowledges h1 {
-  width: 60%;
-  margin: 1.4rem 0;
+  width: 90%;
+  margin: 2.4rem 0;
   text-align: center;
   font-size: 3rem;
   letter-spacing: -1.5px;
@@ -85,35 +85,56 @@ body {
 .wrapper-section-knowledges {
   width: 90%;
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(16rem, 1fr));
-  grid-gap: 1.4rem;
+  grid-template-columns: repeat(auto-fit,minmax(9rem, 1fr));
+  grid-gap: 1rem;
   align-items: center;
   justify-items: center;
 }
 
 .card-knowledges {
-  height: 8rem;
-  width: 16rem;
+  height: 7rem;
+  width: 9rem;
   color: white;
-  font-weight: 500;
-  background: linear-gradient(to left, #5c7cfa, #364fc7);
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 16px;
+  border-radius: 12px;
+  user-select: none;
 }
 
 .card-knowledges h1{
   letter-spacing: -.8px;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
 
+.kn1 {
+  background: linear-gradient(to top left, #12b886, #38d9a9);
+}
 .kn2 {
   color: black;
-  background: linear-gradient(to top left, #fcc419 5%, #ffd43b);
+  background: linear-gradient(to top left,#fcc419, #ffd43b);
 }
-
+.kn3 {
+  background: linear-gradient(to top left, #228be6, #4dabf7);
+}
+.kn4 {
+  color: black;
+  background: linear-gradient(to top left,#e8590c, #ff922b);
+}
+.kn5 {
+  background: linear-gradient(to top left,#364fc7, #5c7cfa);
+}
+.kn6 {
+  background: linear-gradient(to top left, #9c36b5, #cc5de8);
+}
+.kn7 {
+  color: black;
+  background: linear-gradient(to top left, #38d9a9, #63e6be);
+}
+.kn8 {
+  background: linear-gradient(to top left, #f03e3e, #ff6b6b);
+}
 
 
 main {
@@ -122,4 +143,7 @@ main {
 /* TOOLS */
 .textBlue {
   color: var(--mainColor);
+}
+.textUnderline {
+  text-decoration: underline solid 6px var(--mainColor);
 }
