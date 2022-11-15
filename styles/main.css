@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+* {
+  margin: 0 0;  
+}
+
+:root {
+  --black: #121212;
+  --white: #fff;
+  --mainColor: #4263eb; /* l: #5c7cfa   d: #364fc7*/
+  --grayBackground: #f2f2f7;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--white);
+  overflow-x: hidden;
+}
+
+
+
+
+/* SECTION WELCOME */
+.section-welcome {
+  margin-top: 6rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.wrapper-section-welcome {
+  width: 35rem;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-welcome-image {
+  background-image: url('../assets/img/user.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0px 10px 25px rgba(0,0,0,0.3);
+  border-radius: 300px;
+  height: 14.5rem;
+  width: 13rem;
+}
+
+.section-welcome-text-container {
+  margin-top: 1.3rem;
+  height: 60%;
+  width: 85%;
+  color: var(--black);
+  text-align: center;
+}
+.section-welcome-text-container h1 {
+  font-size: 2.7rem;
+  letter-spacing: -1.3px;
+}
+
+.section-welcome-text-container p {
+  margin-top: .5rem;
+  font-size: 1.7rem;
+  letter-spacing: -1px;
+  line-height: 1.5;
+}
+
+
+
+/* KNOWLEDGES */
+.section-knowledges {
+  margin-top: 7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section-knowledges h1 {
+  width: 60%;
+  margin: 1.4rem 0;
+  text-align: center;
+  font-size: 3rem;
+  letter-spacing: -1.5px;
+}
+.wrapper-section-knowledges {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(16rem, 1fr));
+  grid-gap: 1.4rem;
+  align-items: center;
+  justify-items: center;
+}
+
+.card-knowledges {
+  height: 8rem;
+  width: 16rem;
+  color: white;
+  font-weight: 500;
+  background: linear-gradient(to left, #5c7cfa, #364fc7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+}
+
+.card-knowledges h1{
+  letter-spacing: -.8px;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.kn2 {
+  color: black;
+  background: linear-gradient(to top left, #fcc419 5%, #ffd43b);
+}
+
+
+
+main {
+  height: 40rem;
+}
+/* TOOLS */
+.textBlue {
+  color: var(--mainColor);
+}
