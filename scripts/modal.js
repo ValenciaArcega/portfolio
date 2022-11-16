@@ -1,18 +1,18 @@
 'use strict';
 
-const btnClose = document.querySelector('.close-modal');
+const btnClose = document.querySelector('.btn-closeModal');
 const btnShow = document.querySelectorAll('.card-knowledges');
-const overlay = document.querySelector('.overlay');
-const modal = document.querySelector('.modal');
+const belowModal = document.querySelector('.below-modal');
+const modalSkills = document.querySelector('.modal-skills');
 
 const openModal = function() {
-  modal.classList.remove('hidden');  
-  overlay.classList.remove('hidden'); 
+  modalSkills.classList.remove('hidden');  
+  belowModal.classList.remove('hidden'); 
 }
 
 const closeModal = function() {
-  modal.classList.add('hidden');
-  overlay.classList.add('hidden');
+  modalSkills.classList.add('hidden');
+  belowModal.classList.add('hidden');
 }
 
 for (let i = 0; i < btnShow.length; i++) {
@@ -20,10 +20,10 @@ for (let i = 0; i < btnShow.length; i++) {
 }
 
 btnClose.addEventListener('click', closeModal);
-overlay.addEventListener('click', closeModal);
+belowModal.addEventListener('click', closeModal);
 
 document.addEventListener('keydown', (e/*this is the key paramether */) => {
-  if (e.key === 'Escape' && !modal.classList.contains('hidden'))  {
+  if (e.key === 'Escape' && !modalSkills.classList.contains('hidden'))  {
       closeModal();
   }
 });
