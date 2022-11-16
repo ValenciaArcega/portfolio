@@ -152,6 +152,7 @@ body {
 }
 
 .kn1 {
+  color: black;
   background: linear-gradient(to top left, #12b886, #38d9a9);
 }
 .kn2 {
@@ -166,22 +167,21 @@ body {
   background: linear-gradient(to top left,#e8590c, #ff922b);
 }
 .kn5 {
-  background: linear-gradient(to top left,#364fc7, #5c7cfa);
+  background: linear-gradient(to top left, #9c36b5, #cc5de8);
 }
 .kn6 {
-  background: linear-gradient(to top left, #9c36b5, #cc5de8);
+  background: linear-gradient(to top left, #f03e3e, #ff6b6b);
 }
 .kn7 {
   color: black;
   background: linear-gradient(to top left, #38d9a9, #63e6be);
 }
 .kn8 {
-  background: linear-gradient(to top left, #f03e3e, #ff6b6b);
+  background: linear-gradient(to top left,#364fc7, #5c7cfa);
 }
 
 
 /* Modal */
-
 .container-modal-header {
   display: grid;
   grid-template-columns: 80% 1fr;
@@ -189,9 +189,9 @@ body {
   justify-items: center;
   height: 20%;
   border-radius: 18px 18px 0 0;
-  background: linear-gradient(to top left,#fcc419, #ffd43b);
   text-align: center;
 }
+
 .container-modal-header h1 {
   color: black;
   font-size: 1.5rem;
@@ -205,7 +205,8 @@ body {
   background: none;
 }
 
-.modal-skills {
+.modal-skillOne,
+.modal-skillTwo {
   position: absolute;
   top: 80rem;
   left: 50%;
@@ -217,13 +218,16 @@ body {
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
   z-index: 10;
 }
-.modal-skills ul {
+
+
+.ul-modal {
   margin: 1.4rem 0 0 1rem;  
 }
-.modal-skills li {
+.ul-modal li {
   padding: .7rem 1rem;
   font-size: 1.5rem;
 }
+
 .below-modal {
   position: fixed;
   top: 0;
