@@ -212,13 +212,18 @@ body {
   transform: translate(-50%, -50%);
   width: 21rem;
   height: 30rem;
-
   background-color: var(--white);
   border-radius: 18px;
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
   z-index: 10;
 }
-
+.modal-skills ul {
+  margin: 1rem 0 0 1rem;  
+}
+.modal-skills li {
+  padding: 1rem 1rem;
+  font-size: 1.5rem;
+}
 .below-modal {
   position: fixed;
   top: 0;
@@ -270,9 +275,6 @@ body {
 /* TOOLS */
 .textBlue {
   color: var(--mainColor);
-}
-.textUnderline {
-  text-decoration: underline solid 6px var(--mainColor);
 }
 .hidden {
   display: none;
