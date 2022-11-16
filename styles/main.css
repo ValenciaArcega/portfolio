@@ -183,7 +183,13 @@ body {
 
 /* Modal */
 .modal-skill-One,
-.modal-skill-Two {
+.modal-skill-Two,
+.modal-skill-Three,
+.modal-skill-Four,
+.modal-skill-Five,
+.modal-skill-Six,
+.modal-skill-Seven,
+.modal-skill-Eight {
   position: absolute;
   top: 80rem;
   left: 50%;
