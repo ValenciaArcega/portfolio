@@ -181,12 +181,25 @@ body {
 
 
 /* Modal */
+
+.container-modal-header {
+  display: grid;
+  grid-template-columns: 80% 1fr;
+  align-items: center;
+  justify-items: center;
+  height: 20%;
+  color: var(--black);
+  border-radius: 18px 18px 0 0;
+  background: linear-gradient(to top left,#fcc419, #ffd43b);
+  text-align: center;
+}
+.container-modal-header h1 {
+  font-size: 1.5rem;
+}
+
 .btn-closeModal {
-  position: absolute;
-  top: 1.2rem;
-  right: 2rem;
-  font-size: 5rem;
-  color: #333;
+  font-size: 3.2rem;
+  color: var(--black);
   cursor: pointer;
   border: none;
   background: none;
@@ -200,7 +213,7 @@ body {
   width: 21rem;
   height: 30rem;
 
-  background-color: white;
+  background-color: var(--white);
   border-radius: 18px;
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
   z-index: 10;
