@@ -141,6 +141,9 @@ body {
   align-items: center;
   border-radius: 12px;
 }
+.card-knowledges:hover {
+  margin-top: -.5rem;  
+}
 
 .card-knowledges h1,
 .card-projects h1 {
@@ -198,6 +201,7 @@ body {
   height: 30rem;
   background-color: var(--white);
   border-radius: 18px;
+  border: none;
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
   z-index: 10;
 }
@@ -214,7 +218,8 @@ body {
 
 .container-modal-header h1 {
   color: black;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
+  letter-spacing: -1px;
 }
 
 .btn-closeModal {
@@ -226,10 +231,11 @@ body {
 }
 
 .ul-modal {
-  margin: 1.4rem 0 0 1rem;  
+  margin: 2.2rem 0 0 1rem;  
 }
 .ul-modal li {
-  padding: .7rem 1rem;
+  list-style: circle;
+  padding: .7rem 1.2rem;
   font-size: 1.5rem;
 }
 
@@ -239,9 +245,9 @@ body {
   left: 0;
   width: 900%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
-  -webkit-backdrop-filter: blur(6px);  
-  backdrop-filter: blur(6px);
+  background-color: rgba(0, 0, 0, 0.3);
+  -webkit-backdrop-filter: blur(8px);  
+  backdrop-filter: blur(8px);
   z-index: 5;
 }
 
