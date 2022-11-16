@@ -13,7 +13,7 @@
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter';
   background-color: var(--white);
   color: var(--black);
   overflow-x: hidden;
@@ -58,7 +58,7 @@ body {
 
 /* SECTION WELCOME */
 .section-welcome {
-  margin-top: 6rem;
+  margin-top: 19rem;
   display: flex;
   gap: 1rem;
   justify-content: center;
@@ -107,14 +107,14 @@ body {
 /* KNOWLEDGES */
 .section-knowledges,
 .section-projects {
-  margin-top: 8rem;
+  margin-top: 15rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .section-knowledges h1,
 .section-projects h1 {
-  width: 90%;
+  width: 70%;
   margin: 2.4rem 0;
   text-align: center;
   font-size: 3rem;
@@ -123,8 +123,8 @@ body {
 .wrapper-section-knowledges {
   width: 90%;
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(9rem, 1fr));
-  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit,minmax(19rem, 1fr));
+  gap: 1.5rem;
   align-items: center;
   justify-items: center;
 }
@@ -134,21 +134,21 @@ body {
   cursor: pointer;
   box-shadow: 2px 8px 10px rgba(0,0,0,0.2);
   height: 7rem;
-  width: 9rem;
+  width: 19rem;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 12px;
-  user-select: none;
 }
 
 .card-knowledges h1,
 .card-projects h1 {
+  font-family: 'Inter';
   letter-spacing: -.8px;
   text-align: center;
   font-weight: 700;
-  font-size: 1.2rem;
+  font-size: 2rem;
 }
 
 .kn1 {
@@ -188,18 +188,18 @@ body {
   align-items: center;
   justify-items: center;
   height: 20%;
-  color: var(--black);
   border-radius: 18px 18px 0 0;
   background: linear-gradient(to top left,#fcc419, #ffd43b);
   text-align: center;
 }
 .container-modal-header h1 {
+  color: black;
   font-size: 1.5rem;
 }
 
 .btn-closeModal {
-  font-size: 3.2rem;
-  color: var(--black);
+  font-size: 3rem;
+  color: black;
   cursor: pointer;
   border: none;
   background: none;
@@ -207,10 +207,10 @@ body {
 
 .modal-skills {
   position: absolute;
-  top: 70rem;
+  top: 80rem;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 21rem;
+  width: 20rem;
   height: 30rem;
   background-color: var(--white);
   border-radius: 18px;
@@ -218,10 +218,10 @@ body {
   z-index: 10;
 }
 .modal-skills ul {
-  margin: 1rem 0 0 1rem;  
+  margin: 1.4rem 0 0 1rem;  
 }
 .modal-skills li {
-  padding: 1rem 1rem;
+  padding: .7rem 1rem;
   font-size: 1.5rem;
 }
 .below-modal {
@@ -231,6 +231,7 @@ body {
   width: 900%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
+  -webkit-backdrop-filter: blur(6px);  
   backdrop-filter: blur(6px);
   z-index: 5;
 }
@@ -255,7 +256,6 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 16px;
-  user-select: none;
 }
 .pro1 {
   background: linear-gradient(to top left, var(--mainColor),#5c7cfa );
