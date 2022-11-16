@@ -30,35 +30,41 @@ document.addEventListener('keydown', (e) => {
   }
 }); */
 
-const btnClose = document.querySelector('.btn-closeModal');
 const belowModal = document.querySelector('.below-modal');
-const headerColor = document.querySelector('.container-modal-header');
+const btnClose = document.querySelectorAll('.btn-closeModal');
 
+const kn1 = document.querySelector('.kn1');
+const kn2 = document.querySelector('.kn2');
+const msOne = document.querySelector('.modal-skill-One');
+const msTwo = document.querySelector('.modal-skill-Two');
 
-document.querySelector('.kn1').addEventListener('click', () => {
+// First
+kn1.addEventListener('click', () => {
   belowModal.classList.remove('hidden');
-  document.querySelector('.modal-skillOne').classList.remove('hidden');
-  headerColor.style.background = 'linear-gradient(to top left, #12b886, #38d9a9)';
+  msOne.classList.remove('hidden');
 });
 
-document.querySelector('.kn2').addEventListener('click', () => {
+kn2.addEventListener('click', () => {
   belowModal.classList.remove('hidden');
-  modalSkill.classList.remove('hidden');
-  headerColor.style.background = 'linear-gradient(to top left,#fcc419, #ffd43b)';
+  msTwo.classList.remove('hidden');
 });
 
 
 
 // Close every modal
 const closeModal = () => {
+  msOne.classList.add('hidden');
+  msTwo.classList.add('hidden');
   belowModal.classList.add('hidden');
-  document.querySelector('.modal-skillOne').classList.add('hidden');
+}
+for (let i = 0; i < btnClose.length; i++) {
+  btnClose[i].addEventListener('click', closeModal);
 }
 
-btnClose.addEventListener('click', closeModal);
 belowModal.addEventListener('click', closeModal);
+
 document.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape' && !document.querySelector('.modal-skillOne').classList.contains('hidden'))  {
-      closeModal();
+  if (e.key === 'Escape' && !msOne.classList.contains('hidden') || !msTwo.classList.contains('hidden')) {
+    closeModal();
   }
 });

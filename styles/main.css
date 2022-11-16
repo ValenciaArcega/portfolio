@@ -182,6 +182,20 @@ body {
 
 
 /* Modal */
+.modal-skill-One,
+.modal-skill-Two {
+  position: absolute;
+  top: 80rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20rem;
+  height: 30rem;
+  background-color: var(--white);
+  border-radius: 18px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
 .container-modal-header {
   display: grid;
   grid-template-columns: 80% 1fr;
@@ -204,21 +218,6 @@ body {
   border: none;
   background: none;
 }
-
-.modal-skillOne,
-.modal-skillTwo {
-  position: absolute;
-  top: 80rem;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 20rem;
-  height: 30rem;
-  background-color: var(--white);
-  border-radius: 18px;
-  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
-  z-index: 10;
-}
-
 
 .ul-modal {
   margin: 1.4rem 0 0 1rem;  
