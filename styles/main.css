@@ -74,17 +74,18 @@ body {
 }
 
 .section-welcome-image {
-  background-image: url('../assets/img/user.jpg');
+  background-image: url('../assets/img/me.jpg');
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   box-shadow: 0px 10px 25px rgba(0,0,0,0.3);
   border-radius: 300px;
-  height: 13.5rem;
-  width: 12rem;
+  height: 12rem;
+  width: 11.5rem;
 }
 
 .section-welcome-text-container {
-  margin-top: 1.6rem;
+  margin-top: 1rem;
   height: 60%;
   width: 90%;
   color: var(--black);
@@ -96,7 +97,6 @@ body {
 }
 
 .section-welcome-text-container p {
-  margin-top: .2rem;
   font-size: 1.7rem;
   letter-spacing: -1px;
   line-height: 1.5;
@@ -124,7 +124,7 @@ body {
   width: 90%;
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(9rem, 1fr));
-  gap: 1rem;
+  gap: 1.3rem .8rem;
   align-items: center;
   justify-items: center;
 }
@@ -139,7 +139,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 12px;
+  border-radius: 10px;
 }
 .card-knowledges:hover {
   margin-top: -.5rem;  
@@ -191,7 +191,7 @@ body {
 .modal-skill-Seven,
 .modal-skill-Eight {
   position: absolute;
-  top: 80rem;
+  top: 85rem;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 20rem;
