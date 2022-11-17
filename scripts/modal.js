@@ -73,11 +73,13 @@ const kn1 = document.querySelector('.kn1');
 const kn2 = document.querySelector('.kn2');
 const kn3 = document.querySelector('.kn3');
 const kn4 = document.querySelector('.kn4');
+const kn5 = document.querySelector('.kn5');
 
 const msOne = document.querySelector('.modal-skill-One');
 const msTwo = document.querySelector('.modal-skill-Two');
 const msThree = document.querySelector('.modal-skill-Three');
 const msFour = document.querySelector('.modal-skill-Four');
+const msFive = document.querySelector('.modal-skill-Five');
 
 kn1.addEventListener('click', () => {
   belowModal.classList.remove('hidden');
@@ -99,12 +101,19 @@ kn4.addEventListener('click', () => {
   msFour.classList.remove('hidden');
 });
 
+kn5.addEventListener('click', () => {
+  belowModal.classList.remove('hidden');
+  msFive.classList.remove('hidden');
+})
+
+
 // Close every modal
 const closeModal = () => {
   msOne.classList.add('hidden');
   msTwo.classList.add('hidden');
   msThree.classList.add('hidden');
   msFour.classList.add('hidden');
+  msFive.classList.add('hidden');
   belowModal.classList.add('hidden');
 }
 
@@ -115,7 +124,7 @@ for (let i = 0; i < btnClose.length; i++) {
 belowModal.addEventListener('click', closeModal);
 
 document.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape' && !msOne.classList.contains('hidden') || !msTwo.classList.contains('hidden') || !msThree.classList.contains('hidden') || !msFour.classList.contains('hidden')) {
+  if (e.key === 'Escape' && !msOne.classList.contains('hidden') || !msTwo.classList.contains('hidden') || !msThree.classList.contains('hidden') || !msFour.classList.contains('hidden') || !msFive.classList.contains('hidden')) {
     closeModal();
   }
 });

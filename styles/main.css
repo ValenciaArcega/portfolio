@@ -199,13 +199,13 @@ body {
   background-color: var(--white);
   border-radius: 18px;
   border: none;
-  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.5);
   z-index: 10;
 }
 
 .container-modal-header {
   display: grid;
-  grid-template-columns: 80% 1fr;
+  grid-template-columns: 16rem 1fr;
   align-items: center;
   justify-items: center;
   height: 20%;
@@ -228,7 +228,7 @@ body {
 }
 
 .ul-modal {
-  margin: 2.2rem 0 0 1rem;  
+  margin: 1.1rem 0 0 1rem;  
 }
 .ul-modal li {
   list-style: circle;
@@ -252,6 +252,10 @@ body {
 
 
 /* Section Projects */
+.section-projects {
+  margin-top: 15rem;
+}
+
 .wrapper-section-projects {
   width: 90%;
   display: grid;
