@@ -63,9 +63,8 @@ class Modals extends HTMLElement {
 window.customElements.define("modal-skill", Modals);
 
 
-
+/*
 // Modals logic
-
 const belowModal = document.querySelector('.below-modal');
 const btnClose = document.querySelectorAll('.btn-closeModal');
 
@@ -77,6 +76,9 @@ const kn5 = document.querySelector('.kn5');
 const kn6 = document.querySelector('.kn6');
 const kn7 = document.querySelector('.kn7');
 const kn8 = document.querySelector('.kn8');
+
+
+
 
 const msOne = document.querySelector('.modal-skill-One');
 const msTwo = document.querySelector('.modal-skill-Two');
@@ -151,3 +153,6 @@ document.addEventListener('keydown', (e) => {
     closeModal();
   }
 });
+
+
+*/
