@@ -75,6 +75,8 @@ const kn3 = document.querySelector('.kn3');
 const kn4 = document.querySelector('.kn4');
 const kn5 = document.querySelector('.kn5');
 const kn6 = document.querySelector('.kn6');
+const kn7 = document.querySelector('.kn7');
+const kn8 = document.querySelector('.kn8');
 
 const msOne = document.querySelector('.modal-skill-One');
 const msTwo = document.querySelector('.modal-skill-Two');
@@ -82,6 +84,8 @@ const msThree = document.querySelector('.modal-skill-Three');
 const msFour = document.querySelector('.modal-skill-Four');
 const msFive = document.querySelector('.modal-skill-Five');
 const msSix = document.querySelector('.modal-skill-Six');
+const msSeven = document.querySelector('.modal-skill-Seven');
+const msEight = document.querySelector('.modal-skill-Eight');
 
 kn1.addEventListener('click', () => {
   belowModal.classList.remove('hidden');
@@ -113,6 +117,15 @@ kn6.addEventListener('click', () => {
   msSix.classList.remove('hidden');
 });
 
+kn7.addEventListener('click', () => {
+  belowModal.classList.remove('hidden');
+  msSeven.classList.remove('hidden');
+});
+
+kn8.addEventListener('click', () => {
+  belowModal.classList.remove('hidden');
+  msEight.classList.remove('hidden');  
+});
 
 // Close every modal
 const closeModal = () => {
@@ -122,6 +135,8 @@ const closeModal = () => {
   msFour.classList.add('hidden');
   msFive.classList.add('hidden');
   msSix.classList.add('hidden');
+  msSeven.classList.add('hidden');
+  msEight.classList.add('hidden');
   belowModal.classList.add('hidden');
 }
 
@@ -132,7 +147,7 @@ for (let i = 0; i < btnClose.length; i++) {
 belowModal.addEventListener('click', closeModal);
 
 document.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape' && !msOne.classList.contains('hidden') || !msTwo.classList.contains('hidden') || !msThree.classList.contains('hidden') || !msFour.classList.contains('hidden') || !msFive.classList.contains('hidden') || !msSix.classList.contains('hidden')) {
+  if (e.key === 'Escape' && !msOne.classList.contains('hidden') || !msTwo.classList.contains('hidden') || !msThree.classList.contains('hidden') || !msFour.classList.contains('hidden') || !msFive.classList.contains('hidden') || !msSix.classList.contains('hidden') || !msSeven.classList.contains('hidden') || !msEight.classList.contains('hidden')) {
     closeModal();
   }
 });
