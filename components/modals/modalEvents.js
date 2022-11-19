@@ -14,7 +14,8 @@ for (let i = 0; i < buttons.length+1; i++) {
   btnsCloseModal[i].addEventListener('click',closeModal);
   belowModal.addEventListener('click', closeModal);
   document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && !modalWindow[i].classList.contains('hidden')) {
+    if (e.key === 'Escape' && !modalWindow[i].
+    classList.contains('hidden')) {
       closeModal();
     }
   });  

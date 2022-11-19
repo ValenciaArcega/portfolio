@@ -256,7 +256,10 @@ body {
   gap: 2rem;
   align-items: center;
 }
-
+.section-education h1 {
+  letter-spacing: -1px;
+  font-size: 3rem;
+}
 
 .wrapper-section-education {
   width: 100%;
@@ -283,20 +286,45 @@ body {
   border-radius: 48px;  
   margin-left: 2rem;
 }
+
 .card-education {
-  margin: 0 1rem 0 1.1rem;
+  margin: 0 .7rem 0 1.1rem;
   width: 13rem;
-  height: 10rem;
+  height: 7.5rem;
   border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+}
+.card-education h2 {
+  font-size: 1.5rem;
+  background-color:white;
+  padding: .2rem .1em;
+}
+.card-education img {
+  width: 70%;
+  height:fit-content;
 }
 
 .ce1 {
-  background: linear-gradient(to right bottom, #6f89f4,var(--mainColor));
+  background: linear-gradient(to right bottom, #829afa,var(--mainColor));
 }
 .ce2 {
+
   background: linear-gradient(to top left, #38d9a9, #63e6be);
+  background: linear-gradient(to right bottom, #7bff6a, #1dfa84);
+}
+.ce3 {
+  background: linear-gradient(to right bottom, #ffb340, #ff8223);
+}
+.ce4 {
+  background: linear-gradient(to right bottom, #818181, #1c1c1c);
 }
 
+.ce5 {
+
+}
 
 
 /* Section Projects */
