@@ -3,7 +3,6 @@
 class Modals extends HTMLElement {
   constructor() {
     super();
-    this.modal_number;
     this.header_color;
     this.modal_title;
     this.skill_one;
@@ -14,14 +13,11 @@ class Modals extends HTMLElement {
 
   // to set the name of the attributes that will be in the html tag
   static get observedAttributes() {
-    return ['number','color','title', 's1', 's2', 's3', 's4'];
+    return ['color','title', 's1', 's2', 's3', 's4'];
   }
 
   // compare the html attributes wiv our local variables
   attributeChangedCallback(Attr, oldValue, newValue) {      
-    if (Attr == "number") {
-      this.modal_number = newValue;
-    }
     if (Attr == "color") {
       this.header_color = newValue;
     }
@@ -45,7 +41,7 @@ class Modals extends HTMLElement {
   // everything here will be display in the browser
   connectedCallback() {
     this.innerHTML =
-    `<div class="${this.modal_number} hidden">
+    `<div class="modal-skills hidden">
         <div class="container-modal-header ${this.header_color}">
           <h1>${this.modal_title}</h1>
           <button class="btn-closeModal" type="button">&times;</button>

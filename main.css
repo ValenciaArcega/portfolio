@@ -80,7 +80,7 @@ body {
 }
 
 .section-welcome-image {
-  background-image: url('../assets/img/user01.JPG');
+  background-image: url('assets/img/user01.JPG');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -188,14 +188,7 @@ body {
 
 
 /* Modal */
-.modal-skill-One,
-.modal-skill-Two,
-.modal-skill-Three,
-.modal-skill-Four,
-.modal-skill-Five,
-.modal-skill-Six,
-.modal-skill-Seven,
-.modal-skill-Eight {
+.modal-skills  {
   position: absolute;
   top: 85rem;
   left: 50%;
