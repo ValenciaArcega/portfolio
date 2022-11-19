@@ -12,6 +12,7 @@
   --mainColor: #4263eb; /* l: #5c7cfa   d: #364fc7*/
   --grayBackground: #f2f2f7;
   --border: #D9D9D9;
+  --bgCardKnowledges: #fff;
 }
 
 html {
@@ -144,6 +145,7 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 10px;
+  background-color: var(--bgCardKnowledges);
 }
 .card-knowledges:hover {
   margin-top: -.5rem;  
@@ -305,17 +307,16 @@ a img {
 }
 
 .ce1 {
-  background: linear-gradient(to right bottom, #92a8fe,var(--mainColor));
+  background: linear-gradient(to right bottom, #c1c0f9,#7792ff);
 }
 .ce2 {
   background-color: white;
 }
 .ce3 {
-  background: linear-gradient(to right bottom, #ffc164, #ff7913);
+  background: linear-gradient(to right bottom, #ffadad, #f43232);
 }
 .ce4 {
-  background: linear-gradient(to top left, #38d9a9, #63e6be);
-  background: linear-gradient(to right bottom, #7bff6a, #1dfa84);
+  background: linear-gradient(to right bottom, #afffee, #00fb75);
 }
 .ce5 {
   background: linear-gradient(to right bottom, #818181, #1c1c1c);

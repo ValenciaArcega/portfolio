@@ -6,6 +6,7 @@ btnLightMode.classList.add('hidden');
 const turnDark = () => {
   root.style.setProperty('--white','#121212');
   root.style.setProperty('--black', 'white');
+  root.style.setProperty('--bgCardKnowledges','#131313');
   btnDarkMode.classList.add('hidden');
   btnLightMode.classList.remove('hidden');
 };
