@@ -109,7 +109,7 @@ body {
 
 
 
-/* KNOWLEDGES */
+/* SECTION KNOWLEDGES */
 .section-knowledges,
 .section-projects {
   margin-top: 15rem;
@@ -128,7 +128,7 @@ body {
 .wrapper-section-knowledges {
   width: 90%;
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(9rem, 1fr));
+  grid-template-columns: repeat(auto-fit,minmax(8.5rem, 1fr));
   gap: 1.3rem .8rem;
   align-items: center;
   justify-items: center;
@@ -138,7 +138,7 @@ body {
   border: none;
   box-shadow: 2px 8px 10px rgba(0,0,0,0.2);
   height: 5.5rem;
-  width: 9rem;
+  width: 8.5rem;
   color: white;
   display: flex;
   justify-content: center;
@@ -275,11 +275,11 @@ body {
   -webkit-appearance: none;
 }
 .wrapper-section-education::-webkit-scrollbar:horizontal {
-  height: 9px;    
+  height: 8px;    
 }
 
 .wrapper-section-education::-webkit-scrollbar-thumb {
-  background-color: #0000002d;
+  background-color: #7070702d;
   border-radius: 10px;
 }
 
