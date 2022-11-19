@@ -191,7 +191,7 @@ body {
   top: 85rem;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 20rem;
+  width: 19rem;
   height: 25rem;
   background-color: var(--white);
   border-radius: 18px;
@@ -224,12 +224,12 @@ body {
 }
 
 .ul-modal {
-  margin: 1.7rem 0 0 3.8rem;  
+  margin: .5rem 0 0 3.8rem;  
 }
 .ul-modal li {
   list-style: disc;
   padding: .7rem 1.7rem 1rem 0;
-  font-size: 1.3rem;
+  font-size: 1.25rem;
 }
 
 .below-modal {
@@ -270,6 +270,7 @@ body {
   align-items: center;
   justify-items: center;
   overflow-x: scroll;
+  overflow-y: hidden;
 }
 .wrapper-section-education::-webkit-scrollbar {
   -webkit-appearance: none;
@@ -298,9 +299,9 @@ body {
   align-items: center;
   box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
 }
-.card-education img {
+a img {
   width: 70%;
-  height:fit-content;
+  height: auto;
 }
 
 .ce1 {
