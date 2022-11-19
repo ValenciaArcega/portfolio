@@ -310,21 +310,25 @@ body {
 .ce1 {
   background: linear-gradient(to right bottom, #829afa,var(--mainColor));
 }
-.ce2 {
 
-  background: linear-gradient(to top left, #38d9a9, #63e6be);
-  background: linear-gradient(to right bottom, #7bff6a, #1dfa84);
+.ce2 {
+  background-color: white;
 }
+
 .ce3 {
   background: linear-gradient(to right bottom, #ffb340, #ff8223);
 }
+
 .ce4 {
-  background: linear-gradient(to right bottom, #818181, #1c1c1c);
+  background: linear-gradient(to top left, #38d9a9, #63e6be);
+  background: linear-gradient(to right bottom, #7bff6a, #1dfa84);
 }
 
 .ce5 {
-
+  background: linear-gradient(to right bottom, #818181, #1c1c1c);
 }
+
+
 
 
 /* Section Projects */
