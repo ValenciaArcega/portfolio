@@ -280,7 +280,9 @@ body {
   -webkit-appearance: none;
   
 }
-.wrapper-section-education::-webkit-scrollbar:horizontal,
+.wrapper-section-education::-webkit-scrollbar:horizontal{
+  height: 7px;
+}
 .wrapper-section-ui::-webkit-scrollbar:horizontal {  
   height: 20px;
 }
@@ -392,6 +394,35 @@ a img {
 }
 
 .wrapper-section-schedule img {
+  padding: 0 1.5rem;
+  height: 25rem;
+}
+
+
+.section-projects h4 {
+  font-size: 3.5rem;  
+  width: 100%;
+  background-color: rgb(18,18,18);
+  color: white;
+  letter-spacing: -1px;
+  line-height: .9;
+  text-align: center;
+  padding: 4rem .5rem 1rem .5rem;
+}
+.wrapper-section-compiler {
+  margin-top: -1rem;
+  width: 100%;
+  background-color: rgb(18,18,18);
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  overflow-x: scroll;
+  overflow-y: hidden;
+  height: 30rem; 
+}
+
+.wrapper-section-compiler img {
   padding: 0 1.5rem;
   height: 25rem;
 }
