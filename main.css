@@ -80,7 +80,7 @@ body {
 }
 
 .section-welcome-image {
-  background-image: url('assets/img/user01.JPG');
+  background-image: url('assets/img/user01.webp');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -276,14 +276,16 @@ body {
   overflow-y: hidden;
 }
 .wrapper-section-education::-webkit-scrollbar,
-.wrapper-section-ui::-webkit-scrollbar {
+.wrapper-section-ui::-webkit-scrollbar,
+.wrapper-section-schedule::-webkit-scrollbar {
   -webkit-appearance: none;
   
 }
 .wrapper-section-education::-webkit-scrollbar:horizontal{
   height: 7px;
 }
-.wrapper-section-ui::-webkit-scrollbar:horizontal {  
+.wrapper-section-ui::-webkit-scrollbar:horizontal,
+.wrapper-section-schedule::-webkit-scrollbar:horizontal {  
   height: 20px;
 }
 
@@ -292,9 +294,14 @@ body {
   background-color: rgb(39,39,39);
   border-radius: 4px;  
 }
+.wrapper-section-schedule::-webkit-scrollbar-thumb {
+  background-color: rgb(18,18,18);
+  border-radius: 4px;
+}
 
 .wrapper-section-education::-webkit-scrollbar-track,
-.wrapper-section-ui::-webkit-scrollbar-track {
+.wrapper-section-ui::-webkit-scrollbar-track, 
+.wrapper-section-schedule::-webkit-scrollbar-track {
   border-radius: 32px;  
   margin-left: 2rem;
 }
@@ -378,9 +385,10 @@ a img {
   letter-spacing: -1px;
   line-height: .9;
   text-align: center;
-  padding: 4rem .5rem 1rem .5rem;
+  padding: 8rem .5rem 1rem .5rem;
 }
 .wrapper-section-schedule {
+  margin-bottom: -.5rem;
   margin-top: -1rem;
   width: 100%;
   background-color: rgb(39,39,39);
@@ -407,10 +415,10 @@ a img {
   letter-spacing: -1px;
   line-height: .9;
   text-align: center;
-  padding: 4rem .5rem 1rem .5rem;
+  padding: 8rem .5rem 1rem .5rem;
 }
 .wrapper-section-compiler {
-  margin-top: -1rem;
+  margin-top: -.5rem;
   width: 100%;
   background-color: rgb(18,18,18);
   display: grid;
