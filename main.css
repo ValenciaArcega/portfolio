@@ -329,6 +329,22 @@ a img {
   margin-top: 15rem;
 }
 
+.wrapper-section-ui {
+  width: 100%;
+  background-color: rgb(18,18,18);
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  overflow-x: scroll;
+  overflow-y: hidden;
+  height: 45rem;
+}
+.wrapper-section-ui img {
+  margin: 1rem 1rem;
+  width: 18rem;
+}
+
 .wrapper-section-projects {
   width: 90%;
   display: grid;
