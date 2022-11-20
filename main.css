@@ -14,6 +14,7 @@
   --grayBackground: #f2f2f7;
   --border: #D9D9D9;
   --bgCardKnowledges: #fff;
+  --borderNavBar: #D9D9D9;
 }
 
 html {
@@ -29,9 +30,9 @@ body {
 
 
 /* BUTTON */
-.container-btnsAppearance {
+.container-btnsNavBar {
   position: fixed;
-  top: 20px;
+  bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
   width: 65vw;
@@ -39,12 +40,12 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);  
   align-items: center;
-
-  border: solid 1px #D9D9D9;
+  justify-items: center;
+  border: solid 1px var(--borderNavBar);
   border-radius: 12px;
   -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.085);  
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
 }
 
 .btnDark,
