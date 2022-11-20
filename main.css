@@ -121,10 +121,11 @@ body {
 .section-knowledges h1,
 .section-projects h1 {
   width: 90%;
-  margin: 2.4rem 0;
+  margin: 2.5rem 0;
   text-align: center;
   font-size: 3rem;
-  letter-spacing: -1.5px;
+  letter-spacing: -1.2px;
+  line-height: 1.1;
 }
 .wrapper-section-knowledges {
   width: 90%;
@@ -259,9 +260,9 @@ body {
   text-align: center;
   margin-top: 1.5rem;
   width: 85%;
-  letter-spacing: -1.5px;
+  letter-spacing: -1px;
   line-height: 1.1;
-  font-size: 3rem;
+  font-size: 2.1rem;
 }
 
 .wrapper-section-education {
@@ -274,19 +275,23 @@ body {
   overflow-x: scroll;
   overflow-y: hidden;
 }
-.wrapper-section-education::-webkit-scrollbar {
+.wrapper-section-education::-webkit-scrollbar,
+.wrapper-section-ui::-webkit-scrollbar {
   -webkit-appearance: none;
 }
-.wrapper-section-education::-webkit-scrollbar:horizontal {
+.wrapper-section-education::-webkit-scrollbar:horizontal,
+.wrapper-section-ui::-webkit-scrollbar:horizontal {
   height: 8px;    
 }
 
-.wrapper-section-education::-webkit-scrollbar-thumb {
+.wrapper-section-education::-webkit-scrollbar-thumb,
+.wrapper-section-ui::-webkit-scrollbar-thumb {
   background-color: #7070702d;
   border-radius: 10px;
 }
 
-.wrapper-section-education::-webkit-scrollbar-track {
+.wrapper-section-education::-webkit-scrollbar-track,
+.wrapper-section-ui::-webkit-scrollbar-track {
   border-radius: 48px;  
   margin-left: 2rem;
 }
@@ -327,18 +332,19 @@ a img {
 /* Section Projects */
 .section-projects {
   margin-top: 15rem;
+  display: flex;
+  flex-direction: column;
 }
 .section-projects h2 {
-  font-size: 3.7rem;
+  font-size: 4.5rem;
   letter-spacing: -1px;
-  line-height: 1;
+  line-height: .85;
   width: 100%;
   text-align: center;
   color: white;
   background-color: rgb(18,18,18);
-  padding-top: 2rem;
-  margin-bottom: -5px;
-  position: relative;
+  padding: 4rem 0 1rem 0;
+  margin: 2.6rem 0 -10px 0;
 }
 
 .wrapper-section-ui {
@@ -350,40 +356,46 @@ a img {
   grid-template-columns: repeat(8, 1fr);
   overflow-x: scroll;
   overflow-y: hidden;
-  height: 36rem;
+  height: 33rem;  
 }
 .wrapper-section-ui img {
-  margin: 1rem 1rem;
-  width: 17rem;
+  margin: 0 1rem;    
+  width: 15rem;
 }
 
 
-
-
-.wrapper-section-projects {
-  width: 90%;
+.section-projects h3 {
+  font-size: 3.5rem;  
+  width: 100%;
+  background-color: rgb(39,39,39);
+  color: white;
+  letter-spacing: -1px;
+  line-height: .9;
+  text-align: center;
+  padding: 4rem .5rem 1rem .5rem;
+}
+.wrapper-section-schedule {
+  margin-top: -1rem;
+  width: 100%;
+  background-color: rgb(39,39,39);
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(20rem, 1fr));
-  grid-gap: 1rem;
   align-items: center;
   justify-items: center;
-}
-.card-projects {
-  height: 30rem;
-  width: 20rem;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 16px;
-}
-.pro1 {
-  background: linear-gradient(to top left, var(--mainColor),#5c7cfa );
+  grid-template-columns: repeat(3, 1fr);
+  overflow-x: scroll;
+  overflow-y: hidden;
+  height: 30rem;  
 }
 
-.pro2 {
-  background: linear-gradient(to top left, var(--mainColor),#5c7cfa );
+.wrapper-section-schedule img {
+  padding: 0 1.5rem;
+  height: 25rem;
 }
+
+
+
+
+
 
 
 
