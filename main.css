@@ -328,6 +328,18 @@ a img {
 .section-projects {
   margin-top: 15rem;
 }
+.section-projects h2 {
+  font-size: 3.7rem;
+  letter-spacing: -1px;
+  line-height: 1;
+  width: 100%;
+  text-align: center;
+  color: white;
+  background-color: rgb(18,18,18);
+  padding-top: 2rem;
+  margin-bottom: -5px;
+  position: relative;
+}
 
 .wrapper-section-ui {
   width: 100%;
@@ -335,15 +347,18 @@ a img {
   display: grid;
   align-items: center;
   justify-items: center;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(8, 1fr);
   overflow-x: scroll;
   overflow-y: hidden;
-  height: 45rem;
+  height: 36rem;
 }
 .wrapper-section-ui img {
   margin: 1rem 1rem;
-  width: 18rem;
+  width: 17rem;
 }
+
+
+
 
 .wrapper-section-projects {
   width: 90%;
