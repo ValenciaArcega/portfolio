@@ -278,21 +278,22 @@ body {
 .wrapper-section-education::-webkit-scrollbar,
 .wrapper-section-ui::-webkit-scrollbar {
   -webkit-appearance: none;
+  
 }
 .wrapper-section-education::-webkit-scrollbar:horizontal,
-.wrapper-section-ui::-webkit-scrollbar:horizontal {
-  height: 8px;    
+.wrapper-section-ui::-webkit-scrollbar:horizontal {  
+  height: 20px;
 }
 
 .wrapper-section-education::-webkit-scrollbar-thumb,
 .wrapper-section-ui::-webkit-scrollbar-thumb {
-  background-color: #7070702d;
-  border-radius: 10px;
+  background-color: rgb(39,39,39);
+  border-radius: 4px;  
 }
 
 .wrapper-section-education::-webkit-scrollbar-track,
 .wrapper-section-ui::-webkit-scrollbar-track {
-  border-radius: 48px;  
+  border-radius: 32px;  
   margin-left: 2rem;
 }
 
@@ -335,6 +336,8 @@ a img {
   display: flex;
   flex-direction: column;
 }
+
+/* SECTION UIS */
 .section-projects h2 {
   font-size: 4.5rem;
   letter-spacing: -1px;
@@ -344,10 +347,11 @@ a img {
   color: white;
   background-color: rgb(18,18,18);
   padding: 4rem 0 1rem 0;
-  margin: 2.6rem 0 -10px 0;
+  margin: 2.6rem 0 -4px 0;
 }
 
 .wrapper-section-ui {
+  margin-bottom: -.5rem;
   width: 100%;
   background-color: rgb(18,18,18);
   display: grid;
@@ -363,7 +367,7 @@ a img {
   width: 15rem;
 }
 
-
+/* SECTION SCHEDULE */
 .section-projects h3 {
   font-size: 3.5rem;  
   width: 100%;
