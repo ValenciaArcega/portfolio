@@ -338,8 +338,18 @@ a img {
   padding: 4rem 0 1rem 0;
   margin: 2.6rem 0 -4px 0;
 }
+.section-projects p {
+  margin-top: -.3rem;
+  width: 100%;
+  padding-left: 1.4rem;
+  font-size: 1.5rem;
+  padding-bottom: .5rem;
+  color: #fff;
+  background-color: rgb(18, 18, 18);
+}
 
 .wrapper-section-ui {
+  margin-top: -.5rem;
   margin-bottom: -.5rem;
   width: 100%;
   background-color: rgb(18, 18, 18);
@@ -371,7 +381,7 @@ a img {
 
 .wrapper-section-schedule {
   margin-bottom: -.5rem;
-  margin-top: -1rem;
+  margin-top: -.9rem;
   width: 100%;
   background-color: rgb(39, 39, 39);
   display: grid;
@@ -409,7 +419,7 @@ a img {
   justify-items: center;
   grid-template-columns: repeat(3, 1fr);
   overflow-x: scroll;
-  height: 30rem;
+  height: 25rem;
 }
 
 .wrapper-section-compiler img {
