@@ -173,7 +173,7 @@ body {
 }
 
 .kn1 {
-  background: linear-gradient(to right bottom, #A5DFBC 10%, #6BC3AA);
+  background: linear-gradient(to right bottom, #afffee, #00fb75);
 }
 
 .kn2 {
@@ -481,30 +481,60 @@ a img {
 }
 
 .wrapper-social-cards {
+  margin-top: 2rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  gap: 1.5rem 0;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
   align-items: center;
   justify-items: center;
 }
 
 .card-social {
-  width: 12rem;
-  height: 7rem;
+  color: var(--black);
+  width: 18rem;
+  height: 9.5rem;
   border-radius: 12px;
+  border: solid 1px var(--borderNavBar);
   margin: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.csMail {
-  background: linear-gradient(to right bottom, #afffee, #00fb75);;
+.title-social-container {
+  height: 45%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 80% 1fr; 
+  align-items: center;
+  justify-items: center;
 }
-.csGithub {
-  background: linear-gradient(to right bottom, #afffee, #00fb75);;
+
+.card-social h2 {
+  font-size: 1.8rem;
+  width: 70%;
+  letter-spacing: -1.2px;
 }
-.csLinkdin { 
-  background: linear-gradient(to right bottom, #818181, #1c1c1c);
+.icon-social-card {
+  width: 24px;
+  color: var(--mainColor);
 }
-.csWhatsapp { 
-  background: linear-gradient(to right bottom, #afffee, #00fb75);
+
+.card-social p {
+  font-size: 1.1rem;
+  height: 2.2rem;
+}
+.card-social button,
+.card-social a {
+  height: 22%;
+  font-size: 1.1rem;
+  font-family: 'Inter';
+  background-color: var(--mainColor);
+  color: var(--white);
+  border: none;
+  text-decoration: none;
+  border-radius: 6px;
+  padding: 6px 48px;
 }
 
 
