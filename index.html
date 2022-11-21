@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="description"
@@ -14,6 +15,32 @@
 </head>
 
 <body>
+  <!-- Modals -->
+  <modal-skill color="kn1" title="English skills" s1="Semi technical conversation B1" s2="Speaking and listening"
+    s3="Writing and documentation" s4="Reading and understanding"></modal-skill>
+
+  <modal-skill color="kn2" title="JavaScript skills" s1="DOM manipulation and custom elements"
+    s2="Functions, arrays, objects and variables" s3="Loops & conditionals" s4="Events & object oriented programming">
+  </modal-skill>
+
+  <modal-skill color="kn3" title="CSS skills" s1="CSS Grid for responsive design" s2="Flexbox and Box model"
+    s3="Variables and functions" s4="General best practices"></modal-skill>
+
+  <modal-skill color="kn4" title="HTML skills" s1="Tagging and structuring" s2="Lists and containers"
+    s3="Inheritance; parents and childs" s4="Best practices and general knowledges"></modal-skill>
+
+  <modal-skill color="kn5" title="Git knowledges" s1="Project tracking" s2="Github and implementation with VSCode"
+    s3="Branching and merging" s4="Essential terminal commands"></modal-skill>
+
+  <modal-skill color="kn6" title="UX knowledges" s1="Guide lines and design rules"
+    s2="Design thinking and look and feel" s3="Usability and Accessibility" s4="Design semantics"></modal-skill>
+
+  <modal-skill color="kn7" title="Java skills" s1="OOP and fundamentals." s2="AWT library" s3="Swing library"
+    s4="Manipulate abstract classes to deep customize JElements"></modal-skill>
+
+  <modal-skill color="kn8" title="UI knowledges" s1="Typography" s2="Colors, shadows and whitespace"
+    s3="Images, illustrations and icons" s4="Visual hierarchy, elements and layout"></modal-skill>
+  <div class="below-modal hidden"></div>
   <!-- Navegation Bar -->
   <div class="container-btnsNavBar">
     <a class="btnDark">
@@ -137,17 +164,19 @@
     <h1>University and <span class="textBlue">extra</span> education</h1>
     <div class="wrapper-section-education">
       <a-education url="http://www.tecnologicodecoacalco.edu.mx/TESCO/INICIO/INICIO.php" color="ceWhite"
-      src="assets/icons/brands/logo-TESCo.webp" alt="TESCo-logo"></a-education>
+        src="assets/icons/brands/logo-TESCo.webp" alt="TESCo-logo"></a-education>
 
-      <a-education url="https://www.udemy.com/" color="ceBlue" src="assets/icons/brands/logo-udemy.svg" alt="Udemy-logo">
+      <a-education url="https://www.udemy.com/" color="ceBlue" src="assets/icons/brands/logo-udemy.svg"
+        alt="Udemy-logo">
       </a-education>
 
-      <a-education url="https://platzi.com/" color="ceWhite" src="assets/icons/brands/logo-platzi.webp" alt="Platzi-logo">
+      <a-education url="https://platzi.com/" color="ceWhite" src="assets/icons/brands/logo-platzi.webp"
+        alt="Platzi-logo">
       </a-education>
 
       <a-education url="https://ed.team/" color="ceBlue" src="assets/icons/brands/logo-EDteam.svg" alt="EDteam-logo">
       </a-education>
-      
+
       <a-education url="https://developer.mozilla.org/es/" color="ceWhite" src="assets/icons/brands/logo-mdn.svg"
         alt="MDN-logo"></a-education>
     </div>
@@ -161,10 +190,12 @@
       <div class="card-social">
         <div class="title-social-container">
           <h2>Mail</h2>
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-social-card">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
-          </svg>          
-        </div>        
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="icon-social-card">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+          </svg>
+        </div>
         <p id="myEmail" class="hidden">valencia.arcega@gmail.com</p>
         <button type="button" class="btnShowMail">Show Mail</button>
       </div>
@@ -172,64 +203,50 @@
       <div class="card-social">
         <div class="title-social-container">
           <h2>Whatsapp</h2>
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-social-card">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155" />
-          </svg>                           
-        </div>        
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="icon-social-card">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155" />
+          </svg>
+        </div>
         <a target="_blank" href="http://wa.me/+525525448735">Send Message</a>
       </div>
 
       <div class="card-social">
         <div class="title-social-container">
           <h2>Instagram</h2>
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-social-card">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
-          </svg>                            
-        </div>        
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="icon-social-card">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+          </svg>
+        </div>
         <a target="_blank" href="https://www.instagram.com/valencia.arcega/">Go Profile</a>
       </div>
-<!-- https://www.facebook.com/valencia.arcega 
-     https://github.com/ValenciaArcega
--->
     </div>
   </div>
 
   <!-- Footer -->
-  <footer></footer>
-
-  <!-- Modals -->
-  <modal-skill color="kn1" title="English skills" s1="Semi technical conversation B1" s2="Speaking and listening"
-    s3="Writing and documentation" s4="Reading and understanding"></modal-skill>
-
-  <modal-skill color="kn2" title="JavaScript skills" s1="DOM manipulation and custom elements"
-    s2="Functions, arrays, objects and variables" s3="Loops & conditionals" s4="Events & object oriented programming">
-  </modal-skill>
-
-  <modal-skill color="kn3" title="CSS skills" s1="CSS Grid for responsive design" s2="Flexbox and Box model"
-    s3="Variables and functions" s4="General best practices"></modal-skill>
-
-  <modal-skill color="kn4" title="HTML skills" s1="Tagging and structuring" s2="Lists and containers"
-    s3="Inheritance; parents and childs" s4="Best practices and general knowledges"></modal-skill>
-
-  <modal-skill color="kn5" title="Git knowledges" s1="Project tracking" s2="Github and implementation with VSCode"
-    s3="Branching and merging" s4="Essential terminal commands"></modal-skill>
-
-  <modal-skill color="kn6" title="UX knowledges" s1="Guide lines and design rules"
-    s2="Design thinking and look and feel" s3="Usability and Accessibility" s4="Design semantics"></modal-skill>
-
-  <modal-skill color="kn7" title="Java skills" s1="OOP and fundamentals." s2="AWT library" s3="Swing library"
-    s4="Manipulate abstract classes to deep customize JElements"></modal-skill>
-
-  <modal-skill color="kn8" title="UI knowledges" s1="Typography" s2="Colors, shadows and whitespace"
-    s3="Images, illustrations and icons" s4="Visual hierarchy, elements and layout"></modal-skill>
-
-  <div class="below-modal hidden"></div>
+  <footer>
+    <div class="wrapper-icons-social">
+      <a target="_blank" href="https://www.linkedin.com/in/luis-angel-valencia-arcega-4827b9239/">
+        <img src="assets/icons/footer/icon_footer_linkedin.svg" />
+      </a>
+      <a target="_blank" href="https://github.com/ValenciaArcega">
+        <img src="assets/icons/footer/icon_footer_github.svg" />
+      </a>
+      <a target="_blank" href="https://www.facebook.com/valencia.arcega">
+        <img src="assets/icons/footer/icon_footer_facebook.svg" />
+      </a>
+    </div>
+    <p>&copy; 2022, Valencia Arcega L.</p>
+  </footer>
 
   <script src="components/darkMode/appearance.js"></script>
   <script src="components/modals/modalSkills.js"></script>
   <script src="components/modals/modalEvents.js"></script>
   <script src="components/cards/educationCards.js"></script>
   <script src="components/buttons/showMail.js"></script>
-
 </body>
+
 </html>
