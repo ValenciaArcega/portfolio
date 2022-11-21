@@ -335,15 +335,15 @@ a img {
   text-align: center;
   color: white;
   background-color: rgb(18, 18, 18);
-  padding: 4rem 0 1rem 0;
+  padding: 4rem 0 2rem 0;
   margin: 2.6rem 0 -4px 0;
 }
 .section-projects p {
-  margin-top: -.3rem;
+  margin-top: -.1rem;
   width: 100%;
   padding-left: 1.4rem;
+  padding-bottom: .2rem;
   font-size: 1.5rem;
-  padding-bottom: .5rem;
   color: #fff;
   background-color: rgb(18, 18, 18);
 }
@@ -359,7 +359,7 @@ a img {
   grid-template-columns: repeat(8, 1fr);
   overflow-x: scroll;
   overflow-y: hidden;
-  height: 33rem;
+  height: 31rem;
 }
 
 .wrapper-section-ui img {
