@@ -299,39 +299,37 @@ body {
 
 .card-education {
   margin: 0 .7rem 0 1.1rem;
-  width: 13rem;
-  height: 7.5rem;
+  width: 10rem;
+  height: 5rem;
   border-radius: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 8px 15px 10px rgba(0, 0, 0, 0.038);
 }
 
 a img {
-  width: 70%;
+  width:60%;
   height: auto;
 }
 
-.ce1 {
-  background: linear-gradient(to right bottom, #c1c0f9, #7792ff);
+.ce1, .ce3, .ce4 {
+  background: linear-gradient(to right bottom, #e6e5ff, #a5b6ff);  
 }
-
-.ce2 {
+.ce2, .ce5 {
   background-color: white;
 }
-
-.ce3 {
+/* .ce3 {
   background: linear-gradient(to right bottom, #ffadad, #f43232);
-}
+} */
 
-.ce4 {
+/* .ce4 {
   background: linear-gradient(to right bottom, #afffee, #00fb75);
-}
+} */
 
-.ce5 {
+/* .ce5 {
   background: linear-gradient(to right bottom, #818181, #1c1c1c);
-}
+} */
 
 
 
