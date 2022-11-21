@@ -29,14 +29,14 @@ body {
 }
 
 
-/* BUTTON */
+/* SECTION NAVBAR */
 .container-btnsNavBar {
   position: fixed;
   top: 12px;
   left: 50%;
   transform: translateX(-50%);
-  width: 21rem; /* 65vw; */
-  height: 2.9rem;
+  width: 17.5rem;
+  height: 2.8rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);  
   align-items: center;
@@ -45,14 +45,12 @@ body {
   border-radius: 12px;
   -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
-  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.075);
 }
 
 .btnDark,
 .btnLight,
-.btn-skills,
-.btn-projects,
-.btn-contact {
+.ankerPage {
   border: none;
   background: none;
 }
@@ -268,7 +266,7 @@ body {
 }
 
 
-/* Section Education */
+/* SECTION EDUCATION */
 .section-education {
   margin-top: 15rem;
   width: 100%;
@@ -299,8 +297,8 @@ body {
 
 .card-education {
   margin: 0 .7rem 0 1.1rem;
-  width: 10rem;
-  height: 5rem;
+  width: 12rem;
+  height: 7rem;
   border-radius: 12px;
   display: flex;
   justify-content: center;
@@ -313,24 +311,12 @@ a img {
   height: auto;
 }
 
-.ce1, .ce3, .ce4 {
+.ceBlue {
   background: linear-gradient(to right bottom, #e6e5ff, #a5b6ff);  
 }
-.ce2, .ce5 {
+.ceWhite {
   background-color: white;
 }
-/* .ce3 {
-  background: linear-gradient(to right bottom, #ffadad, #f43232);
-} */
-
-/* .ce4 {
-  background: linear-gradient(to right bottom, #afffee, #00fb75);
-} */
-
-/* .ce5 {
-  background: linear-gradient(to right bottom, #818181, #1c1c1c);
-} */
-
 
 
 /* SECTION PROJECTS */
@@ -478,7 +464,6 @@ a img {
 
 
 /* SECTION SOCIAL */
-
 .section-social {
   margin-bottom: -3.5rem;
   height: 50rem;
@@ -495,16 +480,42 @@ a img {
   padding: 8rem .5rem 1rem .5rem;
 }
 
+.wrapper-social-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  align-items: center;
+  justify-items: center;
+}
+
+.card-social {
+  width: 12rem;
+  height: 7rem;
+  border-radius: 12px;
+  margin: 0 1rem;
+}
+
+.csMail {
+  background: linear-gradient(to right bottom, #afffee, #00fb75);;
+}
+.csGithub {
+  background: linear-gradient(to right bottom, #afffee, #00fb75);;
+}
+.csLinkdin { 
+  background: linear-gradient(to right bottom, #818181, #1c1c1c);
+}
+.csWhatsapp { 
+  background: linear-gradient(to right bottom, #afffee, #00fb75);
+}
+
+
 
 /* TOOLS */
 .textBlue {
   color: var(--mainColor);
 }
-
 .textBlue-onBlack {
   color: #B1BFF7
 }
-
 .hidden {
   display: none;
 }
