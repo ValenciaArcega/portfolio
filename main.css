@@ -32,10 +32,10 @@ body {
 /* BUTTON */
 .container-btnsNavBar {
   position: fixed;
-  bottom: 20px;
+  top: 12px;
   left: 50%;
   transform: translateX(-50%);
-  width: 65vw;
+  width: 21rem; /* 65vw; */
   height: 2.9rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);  
@@ -121,7 +121,8 @@ body {
 /* SECTION KNOWLEDGES */
 .section-knowledges,
 .section-projects {
-  margin-top: 15rem;
+  margin-top: 12rem;
+  padding-top: 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -296,44 +297,6 @@ body {
   overflow-y: hidden;
 }
 
-.wrapper-section-education::-webkit-scrollbar,
-.wrapper-section-ui::-webkit-scrollbar,
-.wrapper-section-schedule::-webkit-scrollbar {
-  -webkit-appearance: none;
-
-}
-
-.wrapper-section-education::-webkit-scrollbar:horizontal {
-  height: 7px;
-}
-
-.wrapper-section-ui::-webkit-scrollbar:horizontal,
-.wrapper-section-schedule::-webkit-scrollbar:horizontal {
-  height: 20px;
-}
-
-.wrapper-section-education::-webkit-scrollbar-thumb {
-  background-color: rgba(133, 133, 133, 0.364);
-  border-radius: 4px;
-}
-
-.wrapper-section-ui::-webkit-scrollbar-thumb {
-  background-color: rgb(39, 39, 39);
-  border-radius: 4px;
-}
-
-.wrapper-section-schedule::-webkit-scrollbar-thumb {
-  background-color: rgb(18, 18, 18);
-  border-radius: 4px;
-}
-
-.wrapper-section-education::-webkit-scrollbar-track,
-.wrapper-section-ui::-webkit-scrollbar-track,
-.wrapper-section-schedule::-webkit-scrollbar-track {
-  border-radius: 32px;
-  margin-left: 2rem;
-}
-
 .card-education {
   margin: 0 .7rem 0 1.1rem;
   width: 13rem;
@@ -372,7 +335,7 @@ a img {
 
 
 
-/* Section Projects */
+/* SECTION PROJECTS */
 .section-projects {
   margin-top: 15rem;
   display: flex;
@@ -441,7 +404,7 @@ a img {
   height: 25rem;
 }
 
-
+/* SECTION COMPILER */
 .section-projects h4 {
   font-size: 3.5rem;
   width: 100%;
@@ -462,25 +425,77 @@ a img {
   justify-items: center;
   grid-template-columns: repeat(3, 1fr);
   overflow-x: scroll;
-  overflow-y: hidden;
   height: 30rem;
 }
 
 .wrapper-section-compiler img {
   padding: 0 1.5rem;
-  height: 25rem;
+  height: 22rem;
 }
 
 
+.wrapper-section-education::-webkit-scrollbar,
+.wrapper-section-ui::-webkit-scrollbar,
+.wrapper-section-schedule::-webkit-scrollbar,
+.wrapper-section-compiler::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+.wrapper-section-education::-webkit-scrollbar:horizontal {
+  height: 7px;
+}
+.wrapper-section-ui::-webkit-scrollbar:horizontal,
+.wrapper-section-schedule::-webkit-scrollbar:horizontal{
+  height: 20px;
+}
+.wrapper-section-compiler::-webkit-scrollbar:horizontal {
+  height: 7px;
+}
+.wrapper-section-education::-webkit-scrollbar-thumb {
+  background-color: rgba(133, 133, 133, 0.313);
+  border-radius: 4px;
+}
+
+.wrapper-section-ui::-webkit-scrollbar-thumb {
+  background-color: rgb(39, 39, 39);
+  border-radius: 4px;
+}
+
+.wrapper-section-schedule::-webkit-scrollbar-thumb {
+  background-color: rgb(18, 18, 18);
+  border-radius: 4px;
+}
+.wrapper-section-compiler::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.44); /* var(--white);   */
+  border-radius: 4px;
+}
+
+.wrapper-section-education::-webkit-scrollbar-track,
+.wrapper-section-ui::-webkit-scrollbar-track,
+.wrapper-section-schedule::-webkit-scrollbar-track,
+.wrapper-section-compiler::-webkit-scrollbar-track {
+  border-radius: 32px;
+  margin-left: 2rem;
+}
 
 
+/* SECTION SOCIAL */
 
+.section-social {
+  margin-bottom: -3.5rem;
+  height: 50rem;
+  background-color: var(--white);
+}
 
-
-
-
-
-
+.section-social h1 {
+  font-size: 3.5rem;
+  width: 100%;
+  color: var(--black);
+  letter-spacing: -1px;
+  line-height: .9;
+  text-align: center;
+  padding: 8rem .5rem 1rem .5rem;
+}
 
 
 /* TOOLS */
