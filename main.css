@@ -481,7 +481,7 @@ a img {
 }
 
 .wrapper-social-cards {
-  margin-top: 2rem;
+  margin-top: 1.6rem;
   display: grid;
   gap: 1.5rem 0;
   grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
@@ -492,7 +492,7 @@ a img {
 .card-social {
   color: var(--black);
   width: 18rem;
-  height: 9.5rem;
+  height: 9.8rem;
   border-radius: 12px;
   border: solid 1px var(--borderNavBar);
   margin: 0 1rem;
@@ -524,6 +524,10 @@ a img {
   font-size: 1.1rem;
   height: 2.2rem;
 }
+#myEmail {
+  margin-top: 1rem;
+}
+
 .card-social button,
 .card-social a {
   height: 22%;
@@ -534,7 +538,11 @@ a img {
   border: none;
   text-decoration: none;
   border-radius: 6px;
-  padding: 6px 48px;
+  padding: 6px 36px;
+}
+
+.btnShowMail {
+  margin-top: 1rem;
 }
 
 
