@@ -617,7 +617,7 @@ a img {
 .card-social button,
 .card-social a {
   height: 30%;
-  padding: 6px 32px;
+  padding: 6.5px 32px;
   border-radius: 8px;
   font-size: 1.1rem;
   font-family: 'Inter';
@@ -667,5 +667,5 @@ footer p {
   display: none;
 }
 .icons8 {
-  
+
 }
