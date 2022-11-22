@@ -1,28 +1,28 @@
 'use strict';
 
-const belowModal = document.querySelector('.below-modal');
-const btnsCloseModal = document.querySelectorAll('.btn-closeModal');
-const buttons = document.querySelectorAll('.kn1, .kn2, .kn3, .kn4, .kn5, .kn6, .kn7, .kn8');
-const modalWindow = document.querySelectorAll('.modal-skills');
+const container_BELOW_MODAL = document.querySelector('.below-modal');
+const buttons_CLOSE_MODAL = document.querySelectorAll('.btn-closeModal');
+const buttons_SKILL = document.querySelectorAll('.kn1, .kn2, .kn3, .kn4, .kn5, .kn6, .kn7, .kn8');
+const modal_SKILL = document.querySelectorAll('.modal-skills');
 
 
-for (let i = 0; i < buttons.length+1; i++) {
-  const closeModal = () => {
-    belowModal.classList.add('hidden');
-    modalWindow[i].classList.add('hidden');
+for (let iterator = 0; iterator < buttons_SKILL.length+1; iterator++) {
+  const function_CLOSE_MODAL = () => {
+    container_BELOW_MODAL.classList.add('hidden');
+    modal_SKILL[iterator].classList.add('hidden');
   };
-  btnsCloseModal[i].addEventListener('click',closeModal);
-  belowModal.addEventListener('click', closeModal);
+  buttons_CLOSE_MODAL[iterator].addEventListener('click',function_CLOSE_MODAL);
+  container_BELOW_MODAL.addEventListener('click', function_CLOSE_MODAL);
   document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && !modalWindow[i].
+    if (e.key === 'Escape' && !modal_SKILL[iterator].
     classList.contains('hidden')) {
-      closeModal();
+      function_CLOSE_MODAL();
     }
   });  
 
-  buttons[i].addEventListener('click', function () {
-    belowModal.classList.remove('hidden');
-    modalWindow[i].classList.remove('hidden');
+  buttons_SKILL[iterator].addEventListener('click', function () {
+    container_BELOW_MODAL.classList.remove('hidden');
+    modal_SKILL[iterator].classList.remove('hidden');
   });
 } // for loop 
 

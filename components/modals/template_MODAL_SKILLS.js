@@ -3,12 +3,12 @@
 class Modals extends HTMLElement {
   constructor() {
     super();
-    this.header_color;
-    this.modal_title;
-    this.skill_one;
-    this.skill_two;
-    this.skill_three;
-    this.skill_four;    
+    this.header_COLOR;
+    this.modal_TITLE;
+    this.li_ONE;
+    this.li_TWO;
+    this.li_THREE;
+    this.li_FOUR;    
   }
 
   // to set the name of the attributes that will be in the html tag
@@ -19,22 +19,22 @@ class Modals extends HTMLElement {
   // compare the html attributes wiv our local variables
   attributeChangedCallback(Attr, oldValue, newValue) {      
     if (Attr == "color") {
-      this.header_color = newValue;
+      this.header_COLOR = newValue;
     }
     if (Attr == "title") {
-      this.modal_title = newValue;
+      this.modal_TITLE = newValue;
     }
     if (Attr == "s1") {
-      this.skill_one = newValue;
+      this.li_ONE = newValue;
     }
     if (Attr == "s2") {
-      this.skill_two = newValue;
+      this.li_TWO = newValue;
     }
     if (Attr == "s3") {
-      this.skill_three = newValue;
+      this.li_THREE = newValue;
     }
     if (Attr == "s4") {
-      this.skill_four = newValue;
+      this.li_FOUR = newValue;
     }
   }
 
@@ -42,15 +42,15 @@ class Modals extends HTMLElement {
   connectedCallback() {
     this.innerHTML =
     `<div class="modal-skills hidden">
-        <div class="container-modal-header ${this.header_color}">
-          <h1>${this.modal_title}</h1>
+        <div class="container-modal-header ${this.header_COLOR}">
+          <h1>${this.modal_TITLE}</h1>
           <button class="btn-closeModal" type="button">&times;</button>
         </div>
         <ul class="ul-modal">
-          <li>${this.skill_one}</li>
-          <li>${this.skill_two}</li>
-          <li>${this.skill_three}</li>
-          <li>${this.skill_four}</li>
+          <li>${this.li_ONE}</li>
+          <li>${this.li_TWO}</li>
+          <li>${this.li_THREE}</li>
+          <li>${this.li_FOUR}</li>
         </ul>
     </div>`;
   }

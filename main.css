@@ -9,8 +9,7 @@
 :root {
   --black: #121212;
   --white: white;
-  --mainColor: #4263eb;
-  /* l: #5c7cfa   d: #364fc7*/
+  --mainColor: #4263eb; /* l: #5c7cfa   d: #364fc7*/
   --grayBackground: #f2f2f7;
   --border: #D9D9D9;
   --bgCardKnowledges: #fff;
