@@ -487,7 +487,7 @@ a img {
 
 .blur-card-inside {
   height: 10rem;
-  width: 60%;
+  width: 80%;
   margin: -10rem;
   border-radius: 12px;
   border: solid 1px var(--borderNavBar);
@@ -617,7 +617,7 @@ a img {
 .card-social button,
 .card-social a {
   height: 30%;
-  padding: 6.5px 32px;
+  padding: 6.4px 32px;
   border-radius: 8px;
   font-size: 1.1rem;
   font-family: 'Inter';
