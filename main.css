@@ -40,13 +40,13 @@ body {
   border-radius: 12px;
   transform: translateX(-50%);
   display: grid;
-  grid-template-columns: repeat(4, 1fr);  
+  grid-template-columns: repeat(4, 1fr);
   align-items: center;
   justify-items: center;
   border: solid 1px var(--borderNavBar);
   -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
-  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.075);
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.05);
 }
 
 .btnDark,
@@ -57,11 +57,12 @@ body {
 }
 
 .iconDark,
-.iconLight  {
+.iconLight {
   height: 24px;
   width: 24px;
   stroke: var(--mainColor);
 }
+
 .icon-nav {
   height: 26px;
   width: 26px;
@@ -239,6 +240,7 @@ body {
   font-size: 1.8rem;
   border: none;
   background: none;
+  color: #121212;
 }
 
 .ul-modal {
@@ -283,8 +285,8 @@ body {
 }
 
 .wrapper-section-education {
-  width: 100%;
   height: 11rem;
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   align-items: center;
@@ -306,12 +308,13 @@ body {
 
 a img {
   height: auto;
-  width:60%;
+  width: 60%;
 }
 
 .ceBlue {
-  background: linear-gradient(to right bottom, #e6e5ff, #a5b6ff);  
+  background: linear-gradient(to right bottom, #e6e5ff, #a5b6ff);
 }
+
 .ceWhite {
   background-color: white;
 }
@@ -327,8 +330,8 @@ a img {
 /* SECTION UIS */
 .section-projects h2 {
   width: 100%;
-  padding: 4rem 0 2rem 0;
   margin: 1.6rem 0 -4px 0;
+  padding: 4rem 0 2rem 0;
   font-size: 4.5rem;
   letter-spacing: -1px;
   line-height: .85;
@@ -336,6 +339,7 @@ a img {
   color: #fff;
   background-color: rgb(18, 18, 18);
 }
+
 .section-projects p {
   width: 100%;
   margin-top: -.1rem;
@@ -347,53 +351,53 @@ a img {
 }
 
 .wrapper-section-ui {
+  height: 31rem;
+  width: 100%;
   margin-top: -.5rem;
   margin-bottom: -.5rem;
-  width: 100%;
-  background-color: rgb(18, 18, 18);
   display: grid;
   align-items: center;
   justify-items: center;
   grid-template-columns: repeat(8, 1fr);
   overflow-x: scroll;
   overflow-y: hidden;
-  height: 31rem;
+  background-color: rgb(18, 18, 18);
 }
 
 .wrapper-section-ui img {
-  margin: 0 1rem;
   width: 230px;
+  margin: 0 1rem;
 }
 
 /* SECTION SCHEDULE */
 .section-projects h3 {
-  font-size: 3.5rem;
   width: 100%;
-  background-color: rgb(39, 39, 39);
-  color: white;
+  padding: 8rem .5rem 1rem .5rem;
+  font-size: 3.5rem;
   letter-spacing: -1px;
   line-height: .9;
   text-align: center;
-  padding: 8rem .5rem 1rem .5rem;
+  color: #fff;
+  background-color: rgb(39, 39, 39);
 }
 
 .wrapper-section-schedule {
+  height: 30rem;
+  width: 100%;
   margin-bottom: -.5rem;
   margin-top: -.9rem;
-  width: 100%;
-  background-color: rgb(39, 39, 39);
   display: grid;
+  grid-template-columns: repeat(3, 1fr);
   align-items: center;
   justify-items: center;
-  grid-template-columns: repeat(3, 1fr);
   overflow-x: scroll;
   overflow-y: hidden;
-  height: 30rem;
+  background-color: rgb(39, 39, 39);
 }
 
 .wrapper-section-schedule img {
-  padding: 0 1.5rem;
   height: 25rem;
+  padding: 0 1.5rem;
 }
 
 /* SECTION COMPILER */
@@ -409,16 +413,16 @@ a img {
 }
 
 .wrapper-section-compiler {
-  width: 100%;
   height: 33rem;
+  width: 100%;
   margin-top: -.5rem;
-  background-color: rgb(18, 18, 18);
   display: grid;
+  grid-template-columns: repeat(3, 1fr);
   align-items: center;
   justify-items: center;
-  grid-template-columns: repeat(3, 1fr);
   overflow-x: scroll;
   overflow-y: hidden;
+  background-color: rgb(18, 18, 18);
 }
 
 .wrapper-section-compiler img {
@@ -438,56 +442,61 @@ a img {
 .wrapper-section-education::-webkit-scrollbar:horizontal {
   height: 7px;
 }
+
 .wrapper-section-ui::-webkit-scrollbar:horizontal,
-.wrapper-section-schedule::-webkit-scrollbar:horizontal{
+.wrapper-section-schedule::-webkit-scrollbar:horizontal {
   height: 20px;
 }
+
 .wrapper-section-compiler::-webkit-scrollbar:horizontal {
   height: 7px;
 }
+
 .wrapper-section-education::-webkit-scrollbar-thumb {
-  background-color: rgba(133, 133, 133, 0.313);
   border-radius: 4px;
+  background-color: rgba(133, 133, 133, 0.313);
 }
 
 .wrapper-section-ui::-webkit-scrollbar-thumb {
-  background-color: rgb(39, 39, 39);
   border-radius: 4px;
+  background-color: rgb(39, 39, 39);
 }
 
 .wrapper-section-schedule::-webkit-scrollbar-thumb {
+  border-radius: 4px;
   background-color: rgb(18, 18, 18);
-  border-radius: 4px;
 }
+
 .wrapper-section-compiler::-webkit-scrollbar-thumb {
-  background-color: rgba(255, 255, 255, 0.44); /* var(--white);   */
   border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.44);
+  /* var(--white);   */
 }
 
 .wrapper-section-education::-webkit-scrollbar-track,
 .wrapper-section-ui::-webkit-scrollbar-track,
 .wrapper-section-schedule::-webkit-scrollbar-track,
 .wrapper-section-compiler::-webkit-scrollbar-track {
-  border-radius: 32px;
   margin-left: 2rem;
+  border-radius: 32px;
 }
 
 
 /* SECTION SOCIAL */
 .section-social {
   margin-top: 6rem;
-  background-color: var(--white);
   padding-bottom: 1rem;
+  background-color: var(--white);
 }
 
 .section-social h1 {
-  font-size: 3.5rem;
   width: 100%;
-  color: var(--black);
+  padding: 8rem .5rem 1rem .5rem;
+  font-size: 3.5rem;
   letter-spacing: -1px;
   line-height: .9;
   text-align: center;
-  padding: 8rem .5rem 1rem .5rem;
+  color: var(--black);
 }
 
 .wrapper-social-cards {
@@ -500,66 +509,69 @@ a img {
 }
 
 .card-social {
-  color: var(--black);
-  width: 18rem;
   height: 7.5rem;
+  width: 18rem;
+  margin: 0 1rem;
   border-radius: 12px;
   border: solid 1px var(--borderNavBar);
-  margin: 0 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: var(--black);
 }
 
 .title-social-container {
   height: 55%;
   width: 100%;
   display: grid;
-  grid-template-columns: 80% 1fr; 
+  grid-template-columns: 80% 1fr;
   align-items: center;
   justify-items: center;
 }
 
 .card-social h2 {
-  font-size: 1.8rem;
   width: 75%;
+  font-size: 1.8rem;
   letter-spacing: -1.2px;
 }
+
 .icon-social-card {
   width: 24px;
   color: var(--mainColor);
 }
 
 #myEmail {
-  font-size: 1.1rem;
   height: 2.2rem;
   margin-top: .4rem;
+  font-size: 1.1rem;
 }
 
 .card-social button,
 .card-social a {
   height: 30%;
+  padding: 6px 32px;
+  border-radius: 8px;
   font-size: 1.1rem;
   font-family: 'Inter';
-  background-color: var(--mainColor);
-  color: var(--white);
   border: none;
   text-decoration: none;
-  border-radius: 8px;
-  padding: 6px 32px;
+  color: var(--white);
+  background-color: var(--mainColor);
+  box-shadow: 0px 5px 15px rgba(67, 117, 197, 0.272);
 }
 
 
 footer {
-  margin-top: 11rem;  
-  margin-bottom: 1rem; 
   height: 5rem;
+  margin-top: 11rem;
+  margin-bottom: 1rem;
+  font-size: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-items: center;
-  font-size: 20px;
 }
+
 footer a {
   text-decoration: none;
 }
@@ -567,9 +579,10 @@ footer a {
 footer img {
   width: 38px;
 }
+
 footer p {
-  margin-top: 1rem;
   height: 20%;
+  margin-top: 1rem;
 }
 
 
@@ -577,9 +590,11 @@ footer p {
 .textBlue {
   color: var(--mainColor);
 }
+
 .textBlue-onBlack {
   color: #B1BFF7
 }
+
 .hidden {
   display: none;
 }
