@@ -32,18 +32,18 @@ body {
 
 /* SECTION NAVBAR */
 .container-btnsNavBar {
+  height: 2.8rem;
+  width: 17.5rem;
   position: fixed;
   top: 12px;
   left: 50%;
+  border-radius: 12px;
   transform: translateX(-50%);
-  width: 17.5rem;
-  height: 2.8rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);  
   align-items: center;
   justify-items: center;
   border: solid 1px var(--borderNavBar);
-  border-radius: 12px;
   -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
   box-shadow: 0 8px 10px rgba(0, 0, 0, 0.075);
@@ -58,14 +58,14 @@ body {
 
 .iconDark,
 .iconLight  {
-  stroke: var(--mainColor);
-  width: 24px;
   height: 24px;
+  width: 24px;
+  stroke: var(--mainColor);
 }
 .icon-nav {
-  stroke: var(--mainColor);
-  width: 26px;
   height: 26px;
+  width: 26px;
+  stroke: var(--mainColor);
 }
 
 
@@ -81,8 +81,8 @@ body {
 }
 
 .wrapper-section-welcome {
-  width: 35rem;
   height: 30rem;
+  width: 35rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -90,18 +90,18 @@ body {
 }
 
 .wrapper-section-welcome img {
-  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3);
-  border-radius: 300px;
-  width: 180px;
   height: 180px;
+  width: 180px;
+  border-radius: 300px;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3);
 }
 
 .section-welcome-text-container {
-  margin-top: 1rem;
   height: 60%;
   width: 90%;
-  color: var(--black);
+  margin-top: 1rem;
   text-align: center;
+  color: var(--black);
 }
 
 .section-welcome-text-container h1 {
@@ -131,46 +131,45 @@ body {
 .section-projects h1 {
   width: 90%;
   margin: 2.5rem 0;
-  text-align: center;
   font-size: 3rem;
   letter-spacing: -1.2px;
   line-height: 1.1;
+  text-align: center;
 }
 
 .wrapper-section-knowledges {
   width: 90%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(8.5rem, 1fr));
   gap: 1.3rem .8rem;
+  grid-template-columns: repeat(auto-fit, minmax(8.5rem, 1fr));
   align-items: center;
   justify-items: center;
 }
 
 .card-knowledges {
-  border: none;
-  box-shadow: 2px 8px 10px rgba(0, 0, 0, 0.2);
   height: 5.5rem;
+  border: none;
   width: 8.5rem;
-  color: white;
+  border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 10px;
+  color: #fff;
   background-color: var(--bgCardKnowledges);
+  box-shadow: 2px 8px 10px rgba(0, 0, 0, 0.2);
 }
 
 .card-knowledges:hover {
   margin-top: -.5rem;
 }
 
-.card-knowledges h1,
-.card-projects h1 {
-  font-family: 'Inter';
-  letter-spacing: -.5px;
-  text-align: center;
-  font-weight: 700;
+.card-knowledges h1 {
   font-size: 1.3rem;
-  color: black;
+  font-weight: 700;
+  letter-spacing: -.5px;
+  font-family: 'Inter';
+  text-align: center;
+  color: #121212;
 }
 
 .kn1 {
@@ -208,30 +207,29 @@ body {
 
 /* Modal */
 .modal-skills {
+  height: 25rem;
+  width: 19rem;
+  border-radius: 18px;
   position: absolute;
   top: 85rem;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 19rem;
-  height: 25rem;
-  background-color: var(--white);
-  border-radius: 18px;
-  border: none;
-  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.5);
   z-index: 10;
+  border: none;
+  background-color: var(--white);
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.5);
 }
 
 .container-modal-header {
-  display: flex;
-  align-items: center;
   height: 20%;
   border-radius: 16px 16px 0 0;
+  display: flex;
+  align-items: center;
   text-align: center;
 }
 
 .container-modal-header h1 {
   width: 80%;
-  color: black;
   font-size: 1.6rem;
   letter-spacing: -1px;
 }
@@ -239,7 +237,6 @@ body {
 .btn-closeModal {
   width: 20%;
   font-size: 1.8rem;
-  color: black;
   border: none;
   background: none;
 }
@@ -249,40 +246,40 @@ body {
 }
 
 .ul-modal li {
-  list-style: disc;
   padding: .7rem 1.7rem 1rem 0;
   font-size: 1.25rem;
+  list-style: disc;
 }
 
 .below-modal {
+  height: 100%;
+  width: 900%;
   position: fixed;
   top: 0;
   left: 0;
-  width: 900%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 5;
   -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
-  z-index: 5;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 
 /* SECTION EDUCATION */
 .section-education {
-  margin-top: 15rem;
   width: 100%;
+  margin-top: 15rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .section-education h1 {
-  text-align: center;
-  margin-top: 1.5rem;
   width: 85%;
+  margin-top: 1.5rem;
   letter-spacing: -1px;
-  line-height: 1.1;
   font-size: 2.1rem;
+  line-height: 1.1;
+  text-align: center;
 }
 
 .wrapper-section-education {
@@ -297,9 +294,9 @@ body {
 }
 
 .card-education {
-  margin: 0 .7rem 0 1.1rem;
-  width: 12rem;
   height: 7rem;
+  width: 12rem;
+  margin: 0 .7rem 0 1.1rem;
   border-radius: 12px;
   display: flex;
   justify-content: center;
@@ -308,8 +305,8 @@ body {
 }
 
 a img {
-  width:60%;
   height: auto;
+  width:60%;
 }
 
 .ceBlue {
@@ -329,20 +326,19 @@ a img {
 
 /* SECTION UIS */
 .section-projects h2 {
+  width: 100%;
   padding: 4rem 0 2rem 0;
   margin: 1.6rem 0 -4px 0;
   font-size: 4.5rem;
   letter-spacing: -1px;
   line-height: .85;
-  width: 100%;
   text-align: center;
-  color: white;
+  color: #fff;
   background-color: rgb(18, 18, 18);
 }
 .section-projects p {
   width: 100%;
   margin-top: -.1rem;
-  padding-left: 1.4rem;
   padding-bottom: .2rem;
   font-size: 1.5rem;
   text-align: center;
@@ -402,31 +398,33 @@ a img {
 
 /* SECTION COMPILER */
 .section-projects h4 {
-  font-size: 3.5rem;
   width: 100%;
-  background-color: rgb(18, 18, 18);
-  color: white;
+  padding: 8rem .5rem 1rem .5rem;
+  font-size: 3.5rem;
   letter-spacing: -1px;
   line-height: .9;
   text-align: center;
-  padding: 8rem .5rem 1rem .5rem;
+  color: #fff;
+  background-color: rgb(18, 18, 18);
 }
 
 .wrapper-section-compiler {
-  margin-top: -.5rem;
   width: 100%;
+  height: 33rem;
+  margin-top: -.5rem;
   background-color: rgb(18, 18, 18);
   display: grid;
   align-items: center;
   justify-items: center;
   grid-template-columns: repeat(3, 1fr);
   overflow-x: scroll;
-  height: 25rem;
+  overflow-y: hidden;
 }
 
 .wrapper-section-compiler img {
+  height: 25rem;
   padding: 0 1.5rem;
-  height: 22rem;
+  padding-bottom: 3rem;
 }
 
 
