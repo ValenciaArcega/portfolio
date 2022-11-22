@@ -25,7 +25,6 @@ body {
   background-color: var(--white);
   color: var(--black);
   overflow-x: hidden;
-  border-bottom: solid var(--mainColor) 7px;
 }
 
 
@@ -45,7 +44,7 @@ body {
   border: solid 1px var(--borderNavBar);
   -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
-  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.075);
 }
 
 .btnDark,
@@ -232,6 +231,7 @@ body {
   width: 80%;
   font-size: 1.6rem;
   letter-spacing: -1px;
+  color: #121212;
 }
 
 .btn-closeModal {
@@ -343,7 +343,7 @@ a img {
   width: 100%;
   margin-top: -.1rem;
   padding-bottom: .2rem;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   text-align: center;
   color: #fff;
   background-color: rgb(18, 18, 18);
@@ -355,9 +355,10 @@ a img {
   margin-top: -.5rem;
   margin-bottom: -.5rem;
   display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(8, 1fr);
   align-items: center;
   justify-items: center;
-  grid-template-columns: repeat(8, 1fr);
   overflow-x: scroll;
   overflow-y: hidden;
   background-color: rgb(18, 18, 18);
@@ -365,7 +366,7 @@ a img {
 
 .wrapper-section-ui img {
   width: 230px;
-  margin: 0 1rem;
+  margin: 0 1.2rem;
 }
 
 /* SECTION SCHEDULE */
@@ -416,7 +417,7 @@ a img {
   width: 100%;
   margin-top: -.5rem;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
   justify-items: center;
   overflow-x: scroll;
@@ -564,7 +565,7 @@ footer {
   height: 5rem;
   margin-top: 11rem;
   margin-bottom: 1rem;
-  font-size: 20px;
+  font-size: 18px;
   display: flex;
   flex-direction: column;
   align-items: center;
