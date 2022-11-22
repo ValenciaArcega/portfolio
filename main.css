@@ -349,7 +349,7 @@ a img {
   background-color: rgb(18, 18, 18);
 }
 
-.wrapper-section-ui {
+.wrapper-project-UI {
   height: 31rem;
   width: 100%;
   margin-top: -.5rem;
@@ -364,7 +364,7 @@ a img {
   background-color: rgb(18, 18, 18);
 }
 
-.wrapper-section-ui img {
+.wrapper-project-UI img {
   width: 230px;
   margin: 0 1.2rem;
 }
@@ -381,7 +381,7 @@ a img {
   background-color: rgb(39, 39, 39);
 }
 
-.wrapper-section-schedule {
+.wrapper-project-schedule {
   height: 30rem;
   width: 100%;
   margin-bottom: -.5rem;
@@ -395,7 +395,7 @@ a img {
   background-color: rgb(39, 39, 39);
 }
 
-.wrapper-section-schedule img {
+.wrapper-project-schedule img {
   height: 25rem;
   padding: 0 1.5rem;
 }
@@ -412,7 +412,7 @@ a img {
   background-color: rgb(18, 18, 18);
 }
 
-.wrapper-section-compiler {
+.wrapper-project-compiler {
   height: 33rem;
   width: 100%;
   margin-top: -.5rem;
@@ -425,17 +425,85 @@ a img {
   background-color: rgb(18, 18, 18);
 }
 
-.wrapper-section-compiler img {
+.wrapper-project-compiler img {
   height: 25rem;
   padding: 0 1.5rem;
   padding-bottom: 3rem;
 }
 
+.wrapper-project-coming-soon {
+  margin: 5rem 0 0 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+}
+
+.coming-soon-header-container {  
+  margin: 0 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.coming-soon-header-container h5 {
+  margin: 0 0 1rem 0;
+  font-size: 4.3rem;
+  letter-spacing: -1px;
+  line-height: .8;
+  text-align: center;
+}
+.coming-soon-header-container p {
+  width: 90%;
+  margin: 12px 0 0 0;
+  padding: 0 0 8px 0;
+  font-size: 1.3rem;
+  letter-spacing: -1px;
+  line-height: 1.4;
+  text-align: center;
+  color: var(--black);
+  background-color: var(--white);
+}
+
+
+
+.coming-soon-project-blur {
+  height: 10rem;
+  width: 100%;
+  margin: 0 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.coming-soon-project-blur h1 {
+  height: 40%;
+  margin: 0 0;
+  color: var(--black);
+}
+
+.coming-soon-project-blur img {
+  margin: 0 0;
+}
+
+.blur-card-inside {
+  height: 10rem;
+  width: 60%;
+  margin: -10rem;
+  border-radius: 12px;
+  border: solid 1px var(--borderNavBar);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  justify-self: center;
+}
+
+
+
+
 
 .wrapper-section-education::-webkit-scrollbar,
-.wrapper-section-ui::-webkit-scrollbar,
-.wrapper-section-schedule::-webkit-scrollbar,
-.wrapper-section-compiler::-webkit-scrollbar {
+.wrapper-project-UI::-webkit-scrollbar,
+.wrapper-project-schedule::-webkit-scrollbar,
+.wrapper-project-compiler::-webkit-scrollbar {
   -webkit-appearance: none;
 }
 
@@ -443,12 +511,12 @@ a img {
   height: 7px;
 }
 
-.wrapper-section-ui::-webkit-scrollbar:horizontal,
-.wrapper-section-schedule::-webkit-scrollbar:horizontal {
+.wrapper-project-UI::-webkit-scrollbar:horizontal,
+.wrapper-project-schedule::-webkit-scrollbar:horizontal {
   height: 20px;
 }
 
-.wrapper-section-compiler::-webkit-scrollbar:horizontal {
+.wrapper-project-compiler::-webkit-scrollbar:horizontal {
   height: 7px;
 }
 
@@ -457,26 +525,26 @@ a img {
   background-color: rgba(133, 133, 133, 0.313);
 }
 
-.wrapper-section-ui::-webkit-scrollbar-thumb {
+.wrapper-project-UI::-webkit-scrollbar-thumb {
   border-radius: 4px;
   background-color: rgb(39, 39, 39);
 }
 
-.wrapper-section-schedule::-webkit-scrollbar-thumb {
+.wrapper-project-schedule::-webkit-scrollbar-thumb {
   border-radius: 4px;
   background-color: rgb(18, 18, 18);
 }
 
-.wrapper-section-compiler::-webkit-scrollbar-thumb {
+.wrapper-project-compiler::-webkit-scrollbar-thumb {
   border-radius: 4px;
   background-color: rgba(255, 255, 255, 0.44);
   /* var(--white);   */
 }
 
 .wrapper-section-education::-webkit-scrollbar-track,
-.wrapper-section-ui::-webkit-scrollbar-track,
-.wrapper-section-schedule::-webkit-scrollbar-track,
-.wrapper-section-compiler::-webkit-scrollbar-track {
+.wrapper-project-UI::-webkit-scrollbar-track,
+.wrapper-project-schedule::-webkit-scrollbar-track,
+.wrapper-project-compiler::-webkit-scrollbar-track {
   margin-left: 2rem;
   border-radius: 32px;
 }
@@ -597,4 +665,7 @@ footer p {
 
 .hidden {
   display: none;
+}
+.icons8 {
+  
 }
