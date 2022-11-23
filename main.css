@@ -569,7 +569,7 @@ a img {
 .wrapper-social-cards {
   margin-top: 1.6rem;
   display: grid;
-  gap: 1.5rem 0;
+  gap: 2rem 0;
   grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
   align-items: center;
   justify-items: center;
@@ -616,12 +616,14 @@ a img {
 .card-social button,
 .card-social a {
   height: 30%;
+  width: 190px;
   padding: 6.4px 32px;
   border-radius: 8px;
   font-size: 1.1rem;
   font-family: 'Inter';
   border: none;
   text-decoration: none;
+  text-align: center;
   color: var(--white);
   background-color: var(--mainColor);
   box-shadow: 0px 5px 15px rgba(67, 117, 197, 0.272);
