@@ -89,15 +89,15 @@ body {
 }
 
 .wrapper-section-welcome img {
-  height: 180px;
-  width: 180px;
+  height: 140px;
+  width: 140px;
   border-radius: 300px;
   box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3);
 }
 
 .section-welcome-text-container {
   height: 60%;
-  width: 90%;
+  width: 95%;
   margin-top: 1rem;
   text-align: center;
   color: var(--black);
@@ -109,7 +109,7 @@ body {
 }
 
 .section-welcome-text-container p {
-  font-size: 1.7rem;
+  font-size: 1.45rem;
   letter-spacing: -1px;
   line-height: 1.6;
 }
@@ -355,7 +355,7 @@ a img {
   margin-top: -.5rem;
   margin-bottom: -.5rem;
   display: grid;
-  gap: 1rem;
+  gap: 8px;
   grid-template-columns: repeat(8, 1fr);
   align-items: center;
   justify-items: center;
@@ -365,7 +365,7 @@ a img {
 }
 
 .wrapper-project-UI img {
-  width: 230px;
+  width: 210px;
   margin: 0 1.2rem;
 }
 
@@ -387,7 +387,7 @@ a img {
   margin-bottom: -.5rem;
   margin-top: -.9rem;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
   justify-items: center;
   overflow-x: scroll;
@@ -396,8 +396,7 @@ a img {
 }
 
 .wrapper-project-schedule img {
-  height: 25rem;
-  padding: 0 1.5rem;
+  height: 24.5rem;
 }
 
 /* SECTION COMPILER */
@@ -426,7 +425,7 @@ a img {
 }
 
 .wrapper-project-compiler img {
-  height: 25rem;
+  height: 24.5rem;
   padding: 0 1.5rem;
   padding-bottom: 3rem;
 }
@@ -487,12 +486,12 @@ a img {
 
 .blur-card-inside {
   height: 10rem;
-  width: 80%;
+  width: 100%;
   margin: -10rem;
   border-radius: 12px;
   border: solid 1px var(--borderNavBar);
-  -webkit-backdrop-filter: blur(8px);
-  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   justify-self: center;
 }
 
@@ -632,7 +631,7 @@ a img {
 footer {
   height: 5rem;
   margin-top: 11rem;
-  margin-bottom: 1rem;
+  margin-bottom: 8px;
   font-size: 18px;
   display: flex;
   flex-direction: column;
@@ -645,12 +644,12 @@ footer a {
 }
 
 footer img {
-  width: 38px;
+  width: 32px;
 }
 
 footer p {
   height: 20%;
-  margin-top: 1rem;
+  margin-top: 8px;
 }
 
 
