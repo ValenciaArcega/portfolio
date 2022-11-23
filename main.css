@@ -550,13 +550,13 @@ a img {
 
 
 /* SECTION SOCIAL */
-.section-social {
+.section-contact {
   margin-top: 6rem;
   padding-bottom: 1rem;
   background-color: var(--white);
 }
 
-.section-social h1 {
+.section-contact h1 {
   width: 100%;
   padding: 8rem .5rem 1rem .5rem;
   font-size: 3.5rem;
@@ -566,18 +566,18 @@ a img {
   color: var(--black);
 }
 
-.wrapper-social-cards {
+.wrapper-contact-cards {
   margin-top: 1.6rem;
   display: grid;
   gap: 2rem 0;
-  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
   align-items: center;
   justify-items: center;
 }
 
-.card-social {
+.card-contact {
   height: 7.5rem;
-  width: 18rem;
+  width: 17rem;
   margin: 0 1rem;
   border-radius: 12px;
   border: solid 1px var(--borderNavBar);
@@ -587,7 +587,7 @@ a img {
   color: var(--black);
 }
 
-.title-social-container {
+.title-contact-container {
   height: 55%;
   width: 100%;
   display: grid;
@@ -596,7 +596,7 @@ a img {
   justify-items: center;
 }
 
-.card-social h2 {
+.card-contact h2 {
   width: 75%;
   font-size: 1.8rem;
   letter-spacing: -1.2px;
@@ -613,8 +613,8 @@ a img {
   font-size: 1.1rem;
 }
 
-.card-social button,
-.card-social a {
+.card-contact button,
+.card-contact a {
   height: 30%;
   width: 190px;
   padding: 6.4px 32px;
@@ -629,7 +629,10 @@ a img {
   box-shadow: 0px 5px 15px rgba(67, 117, 197, 0.272);
 }
 
-
+.card-contact button:hover,
+.card-contact a:hover {
+  background-color: #3e5ddc;
+}
 footer {
   height: 5rem;
   margin-top: 11rem;
