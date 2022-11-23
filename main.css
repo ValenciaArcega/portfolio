@@ -397,6 +397,7 @@ a img {
 
 .wrapper-project-schedule img {
   height: 24.5rem;
+  padding: 0 1.5rem;
 }
 
 /* SECTION COMPILER */
@@ -486,7 +487,7 @@ a img {
 
 .blur-card-inside {
   height: 10rem;
-  width: 100%;
+  width: 90%;
   margin: -10rem;
   border-radius: 12px;
   border: solid 1px var(--borderNavBar);
@@ -537,7 +538,6 @@ a img {
 .wrapper-project-compiler::-webkit-scrollbar-thumb {
   border-radius: 4px;
   background-color: rgba(255, 255, 255, 0.44);
-  /* var(--white);   */
 }
 
 .wrapper-section-education::-webkit-scrollbar-track,
