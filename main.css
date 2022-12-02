@@ -332,6 +332,33 @@ a img {
   flex-direction: column;
 }
 
+
+.container-tolescro {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tolescro-heading {  
+  background-color: var(--white);
+}
+.container-tolescro a { 
+  padding: 16px 32px;
+  font-size: 1.1rem;
+  border-radius: 12px;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  background-color: #1c7ed6;
+}
+.container-tolescro img { 
+  width: 20rem;
+  border-radius: 12px;
+}
+
 /* SECTION UIS */
 .section-projects h2 {
   width: 100%;

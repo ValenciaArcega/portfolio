@@ -97,6 +97,12 @@ class PortfolioTemplate extends HTMLElement {
   <div class="section-projects" id="sp">
     <h1>Personal <span class="textBlue">projects</span></h1>
 
+    <div class="container-tolescro">
+      <h1 class="tolescro-heading"><span class="textBlue">Tolescro</span>.</h1>
+      <a target="_blank" class="anker-tolescro" href="">Go Learn English</a>
+      <img src="/assets/img/tolescro/github-process.png">
+      <img src="/assets/img/tolescro/Lighthouse.png">
+    </div>
     <h2>The <span class="textBlue-onBlack">big ones</span>.</h2>
     <p>UI's built in Java</p>
     <div class="wrapper-project-UI">
@@ -125,7 +131,7 @@ class PortfolioTemplate extends HTMLElement {
     <div class="wrapper-project-coming-soon">
       <div class="coming-soon-header-container">
         <h5>Coming <span class="textBlue">soon</span>.</h5>
-        <p>A big project is <span class="textBlue">coming</span>!</p>
+        <p>A project is <span class="textBlue">coming</span>!</p>
       </div>
       <div class="coming-soon-project-blur">
         <h1>Building</h1>
@@ -208,10 +214,9 @@ class PortfolioTemplate extends HTMLElement {
       <a target="_blank" href="https://www.linkedin.com/in/luis-angel-valencia-arcega-4827b9239/">
         <img src="assets/icons/footer/icon_footer_linkedin.svg" />
       </a>
-      <a target="_blank" href="#">
+      <a target="_blank" href="https://github.com/ValenciaArcega">
         <img src="assets/icons/footer/icon_footer_github.svg" />
       </a>
-      <!-- https://github.com/ValenciaArcega -->
       <a target="_blank" href="https://www.facebook.com/valencia.arcega">
         <img src="assets/icons/footer/icon_footer_facebook.svg" />
       </a>
