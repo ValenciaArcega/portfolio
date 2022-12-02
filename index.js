@@ -98,13 +98,21 @@ class PortfolioTemplate extends HTMLElement {
     <h1>Personal <span class="textBlue">projects</span></h1>
 
     <div class="container-tolescro">
-      <h1 class="tolescro-heading"><span class="textBlue">Tolescro</span>.</h1>
-      <a target="_blank" class="anker-tolescro" href="">Go Learn English</a>
-      <img src="/assets/img/tolescro/github-process.png">
-      <img src="/assets/img/tolescro/Lighthouse.png">
+      <div class="wrapper-tolescro-header">
+        <h6 class="tolescro-heading"><span class="textBlue">Tolescro</span>.</h6>
+        <p class="tolescro-p">Is a powerful, updated and free web tool, where the people can learn English vocabulary, throught cards.</p>    
+      </div>
+      <h5>Developed day by day.</h5>
+      <img src="assets/img/tolescro/github-process.png" alt="Github tracking process"/>
+      <h5>Lighthouse commitment.</h5>
+      <img src="assets/img/tolescro/Lighthouse.png" alt="Lighthouse test"/>
+      <a target="_blank" class="anker-tolescro" href="https://valenciaarcega.github.io/tolescro/">Go Learn English</a>
     </div>
+
+
+
     <h2>The <span class="textBlue-onBlack">big ones</span>.</h2>
-    <p>UI's built in Java</p>
+    <p class="uiJava-p">UI's built in Java</p>
     <div class="wrapper-project-UI">
       <img src="assets/img/UI projects/UI_space.webp" alt="UI Space explorer in Java" />
       <img src="assets/img/UI projects/UI_dentist.webp" alt="UI Dentist booking in Java" />
@@ -131,7 +139,7 @@ class PortfolioTemplate extends HTMLElement {
     <div class="wrapper-project-coming-soon">
       <div class="coming-soon-header-container">
         <h5>Coming <span class="textBlue">soon</span>.</h5>
-        <p>A project is <span class="textBlue">coming</span>!</p>
+        <p class="comingSoon-p">A project is <span class="textBlue">coming</span>!</p>
       </div>
       <div class="coming-soon-project-blur">
         <h1>Building</h1>
