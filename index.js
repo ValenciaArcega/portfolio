@@ -102,9 +102,9 @@ class PortfolioTemplate extends HTMLElement {
         <h6 class="tolescro-heading"><span class="textBlue">Tolescro</span>.</h6>
         <p class="tolescro-p">Is a powerful, updated and free web tool, where the people can learn English vocabulary, throught cards.</p>    
       </div>
-      <h5>Developed day by day.</h5>
+      <h5>Developed <span class="textBlue">day</span> by <span class="textBlue">day</span>.</h5>
       <img src="assets/img/tolescro/github-process.png" alt="Github tracking process"/>
-      <h5>Lighthouse commitment.</h5>
+      <h5>Lighthouse <span class="textBlue">commitment</span>.</h5>
       <img src="assets/img/tolescro/Lighthouse.png" alt="Lighthouse test"/>
       <a target="_blank" class="anker-tolescro" href="https://valenciaarcega.github.io/tolescro/">Go Learn English</a>
     </div>
