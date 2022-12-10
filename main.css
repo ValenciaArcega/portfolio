@@ -371,15 +371,15 @@ a img {
   border-radius: 12px;
 }
 .container-tolescro a { 
-  margin-top: 2rem;
-  padding: 14px 32px;
+  margin-top: 3rem;
+  padding: 14px 42px;
   font-size: 1.1rem;
-  border-radius: 12px;
+  border-radius: 10px;
   text-decoration: none;
   text-align: center;
   color: white;
   background-color: #1c7ed6;
-  box-shadow: 0px 5px 15px rgba(67, 117, 197, 0.272);
+  box-shadow: 0px 6px 15px rgba(67, 117, 197, 0.272);
 }
 .container-tolescro a:hover {
   background-color: #1971c1;

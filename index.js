@@ -106,7 +106,7 @@ class PortfolioTemplate extends HTMLElement {
       <img src="assets/img/tolescro/github-process.png" alt="Github tracking process"/>
       <h5>Lighthouse <span class="textBlue">commitment</span>.</h5>
       <img src="assets/img/tolescro/Lighthouse.png" alt="Lighthouse test"/>
-      <a target="_blank" class="anker-tolescro" href="https://valenciaarcega.github.io/tolescro/">Go Learn English</a>
+      <a target="_blank" class="anker-tolescro" href="https://valenciaarcega.github.io/tolescro/">Go to Tolescro  →</a>
     </div>
 
 
