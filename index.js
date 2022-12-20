@@ -107,7 +107,7 @@ class PortfolioTemplate extends HTMLElement {
       <h5>Lighthouse <span class="textBlue">commitment</span>.</h5>
       <img src="assets/img/tolescro/Lighthouse.png" alt="Lighthouse test"/>
       <div class="wrapper-ankerTolescro">
-        <img src="/assets/img/tolescro/64-tolescroFavicon.png" alt="tolescro logo" width=32px height=32px>
+        <img src="assets/img/tolescro/64-tolescroFavicon.png" alt="tolescro logo" width=32px height=32px>
         <a target="_blank" class="anker-tolescro" href="https://valenciaarcega.github.io/tolescro/">Go to Tolescro 
           <lord-icon
               src="https://cdn.lordicon.com/jxwksgwv.json"
