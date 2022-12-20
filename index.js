@@ -106,13 +106,24 @@ class PortfolioTemplate extends HTMLElement {
       <img src="assets/img/tolescro/github-process.png" alt="Github tracking process"/>
       <h5>Lighthouse <span class="textBlue">commitment</span>.</h5>
       <img src="assets/img/tolescro/Lighthouse.png" alt="Lighthouse test"/>
-      <a target="_blank" class="anker-tolescro" href="https://valenciaarcega.github.io/tolescro/">Go to Tolescro  →</a>
+      <div class="wrapper-ankerTolescro">
+        <img src="/assets/img/tolescro/64-tolescroFavicon.png" alt="tolescro logo" width=32px height=32px>
+        <a target="_blank" class="anker-tolescro" href="https://valenciaarcega.github.io/tolescro/">Go to Tolescro 
+          <lord-icon
+              src="https://cdn.lordicon.com/jxwksgwv.json"
+              trigger="hover"
+              colors="primary:#ffffff"
+              state="hover-1"
+              style="width:22px;height:22px">
+          </lord-icon>
+        </a>
+      </div>
     </div>
 
 
 
     <h2>The <span class="textBlue-onBlack">big ones</span>.</h2>
-    <p class="uiJava-p">UI's built in Java</p>
+    <p class="uiJava-p">Screens built in Java</p>
     <div class="wrapper-project-UI">
       <img src="assets/img/UI projects/UI_space.webp" alt="UI Space explorer in Java" />
       <img src="assets/img/UI projects/UI_dentist.webp" alt="UI Dentist booking in Java" />
