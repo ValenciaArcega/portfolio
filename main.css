@@ -165,9 +165,11 @@ body {
   box-shadow: 2px 8px 10px rgba(0, 0, 0, 0.2);
 }
 
-.card-knowledges:hover {
-  margin-top: -.5rem;
+.card-knowledges:active {
+  transform: translate(0px, -6%);
 }
+
+
 
 .card-knowledges h1 {
   font-size: 1.3rem;
@@ -217,7 +219,7 @@ body {
   width: 19rem;
   border-radius: 18px;
   position: absolute;
-  top: 328rem;
+  top: 80rem;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 10;
