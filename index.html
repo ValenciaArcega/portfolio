@@ -17,7 +17,7 @@
 
 <body>
 
-  <div class="topBar">
+  <nav class="topBar">
     <button type="button" title="Button turn dark mode" class="topBar-btnDark">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
         class="topBar-btn-svg">
@@ -62,14 +62,15 @@
       </svg>
       <p class="topBar-anker-p">Contact</p>
     </a>
-  </div> <!-- Navegation Bar -->
-  
+  </nav> <!-- Navegation Bar -->
+
   <main class="main-welcome">
     <div class="container-welcome">
-      <image src="src/assets/img/user02.webp" alt="User" class="welcome-img"/>
+      <img src="src/assets/img/user02.webp" alt="User" class="welcome-img" />
       <div class="wrapper-welcome-text">
         <h1 class="welcome-text-h1">I<span class="textBlue">'</span>m <span class="textBlue">Angel</span>.</h1>
-        <p class="welcome-text-p">Software <span class="textBlue">developer</span> & web designer, that loves to learn and work
+        <p class="welcome-text-p">Software <span class="textBlue">developer</span> & web designer, that loves to learn
+          and work
           hard, to
           build gorgeous <span class="textBlue">software</span> experiences.</p>
       </div>
@@ -77,63 +78,64 @@
   </main> <!-- Main Welcome -->
 
   <!-- Knowledges -->
-  <div class="section-knowledges" id="sk">
-    <h1><span class="textBlue">Knowledges</span> and skills</h1>
-    <div class="wrapper-section-knowledges">
-      <button class="card-knowledges kn1" type="button">
+  <section class="container-knowledges" id="sk">
+    <h1 class="knowledges-h1"><span class="textBlue">Knowledges</span> and skills</h1>
+    <div class="wrapper-knowledges">
+      <button class="knowledges-btn kn1" type="button">
         <h1>English</h1>
       </button>
-      <button class="card-knowledges kn2" type="button">
+      <button class="knowledges-btn kn2" type="button">
         <h1>JavaScript</h1>
       </button>
-      <button class="card-knowledges kn3" type="button">
+      <button class="knowledges-btn kn3" type="button">
         <h1>CSS</h1>
       </button>
-      <button class="card-knowledges kn4" type="button">
+      <button class="knowledges-btn kn4" type="button">
         <h1>HTML</h1>
       </button>
-      <button class="card-knowledges kn5" type="button">
+      <button class="knowledges-btn kn5" type="button">
         <h1>Git</h1>
       </button>
-      <button class="card-knowledges kn6" type="button">
+      <button class="knowledges-btn kn6" type="button">
         <h1>UX Design</h1>
       </button>
-      <button class="card-knowledges kn7" type="button">
+      <button class="knowledges-btn kn7" type="button">
         <h1>Java</h1>
       </button>
-      <button class="card-knowledges kn8" type="button">
+      <button class="knowledges-btn kn8" type="button">
         <h1>UI Design</h1>
       </button>
     </div>
-  </div>
+  </section>
 
   <!-- Projects -->
-  <div class="section-projects" id="sp">
+  <section class="container-projects" id="sp">
     <h1 class="projects-h1">Personal <span class="textBlue">projects</span></h1>
 
     <div class="container-tolescro">
       <div class="wrapper-tolescro-header">
         <h6 class="tolescro-heading"><span class="textBlue">Tolescro</span>.</h6>
-        <p class="tolescro-p">Is a powerful, updated and free <span class="textBlue">web tool</span>, where the people can <span class="textBlue">learn English</span> vocabulary,
+        <p class="tolescro-p">Is a powerful, updated and free <span class="textBlue">web tool</span>, where the people
+          can <span class="textBlue">learn English</span> vocabulary,
           through cards.</p>
-      </div>
-      <h5>Developed <span class="textBlue">day</span> by <span class="textBlue">day</span>.</h5>
+      </div> <!-- header -->
+
+      <h5>Developed <span class="textBlue">day</span> by <span class="textBlue">day</span>.</h5>      
       <img src="src/assets/img/tolescro/github-process.png" alt="Github tracking process" />
+
       <h5>Lighthouse <span class="textBlue">commitment</span>.</h5>
       <img src="src/assets/img/tolescro/Lighthouse.png" alt="Lighthouse test" />
       <div class="wrapper-ankerTolescro">
         <img src="src/assets/img/tolescro/64-tolescroFavicon.png" alt="tolescro logo" width=32px height=32px>
         <a target="_blank" class="anker-tolescro" href="https://valenciaarcega.github.io/tolescro/">Go to Tolescro
           <lord-icon src="https://cdn.lordicon.com/jxwksgwv.json" trigger="hover" colors="primary:#ffffff"
-            state="hover-1" style="width:22px;height:22px">
+            state="hover-1" class="motionIcon-tolescro">
           </lord-icon>
         </a>
       </div>
     </div>
 
-
-
-    <h2>The <span class="textBlue-onBlack">big ones</span>.</h2>
+    <h2 class="projects-h2">The <span class="textBlue-onBlack">big ones</span>.</h2>
     <p class="uiJava-p">Interfaces built in Java</p>
     <div class="wrapper-project-UI">
       <img src="src/assets/img/UI projects/UI_space.webp" alt="UI Space explorer in Java" />
@@ -157,7 +159,8 @@
       <img src="src/assets/img/UI projects/compiler_light.webp" alt="UI Compiler app in Java" />
       <img src="src/assets/img/UI projects/compiler_dark.webp" alt="UI Compiler(dark mode) app in Java" />
     </div>
-  </div> <!-- PARENT -->
+  </section> <!-- Projects -->
+
 
   <!-- Education  -->
   <div class="section-education">
@@ -174,7 +177,8 @@
         alt="Platzi-logo">
       </a-education>
 
-      <a-education url="https://ed.team/" color="ceBlue" src="src/assets/icons/brands/logo-EDteam.svg" alt="EDteam-logo">
+      <a-education url="https://ed.team/" color="ceBlue" src="src/assets/icons/brands/logo-EDteam.svg"
+        alt="EDteam-logo">
       </a-education>
 
       <a-education url="https://developer.mozilla.org/es/" color="ceWhite" src="src/assets/icons/brands/logo-mdn.svg"
@@ -190,13 +194,15 @@
       <div class="card-contact">
         <div class="title-contact-container">
           <h2>Telegram</h2>
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-social-card">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
-          </svg>          
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="icon-social-card">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
+          </svg>
         </div>
         <a target="_blank" href="https://t.me/valencia_arcega">Send Message</a>
       </div>
-      
+
       <div class="card-contact">
         <div class="title-contact-container">
           <h2>Whatsapp</h2>
@@ -229,18 +235,18 @@
   <footer>
     <div class="wrapper-icons-social">
       <a target="_blank" href="https://www.linkedin.com/in/luis-angel-valencia-arcega-4827b9239/">
-        <img src="src/assets/icons/footer/icon_footer_linkedin.svg" />
+        <img src="src/assets/icons/footer/icon_footer_linkedin.svg" alt="linkedin logo" />
       </a>
       <a target="_blank" href="https://github.com/ValenciaArcega">
-        <img src="src/assets/icons/footer/icon_footer_github.svg" />
-      </a>
-      <a target="_blank" href="https://www.facebook.com/valencia.arcega">
-        <img src="src/assets/icons/footer/icon_footer_facebook.svg" />
+        <img src="src/assets/icons/footer/icon_footer_github.svg" alt="gtihub logo" />
       </a>
       <a target="_blank" href="https://www.instagram.com/valencia.arcega/">
-        <img src="src/assets/icons/footer/icon_footer_instagram.svg" />
+        <img src="src/assets/icons/footer/icon_footer_instagram.svg" alt="instagram logo"/>
       </a>
-      
+      <a target="_blank" href="https://www.facebook.com/valencia.arcega">
+        <img src="src/assets/icons/footer/icon_footer_facebook.svg" alt="facebook logo"/>
+      </a>
+
     </div>
     <p>&copy; 2022, Valencia Arcega</p>
   </footer>
@@ -272,7 +278,7 @@
   <modal-skill color="kn8" title="UI knowledges" s1="Typography" s2="Colors, shadows and whitespace"
     s3="Images, illustrations and icons" s4="Visual hierarchy, elements and layout"></modal-skill>
 
-    <modal-skill color="kn8" title="UI knowledges" s1="Typography" s2="Colors, shadows and whitespace"
+  <modal-skill color="kn8" title="UI knowledges" s1="Typography" s2="Colors, shadows and whitespace"
     s3="Images, illustrations and icons" s4="Visual hierarchy, elements and layout"></modal-skill>
   <div class="below-modal hidden"></div>
 

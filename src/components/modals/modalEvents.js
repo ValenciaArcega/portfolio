@@ -6,23 +6,23 @@ const buttons_SKILL = document.querySelectorAll('.kn1, .kn2, .kn3, .kn4, .kn5, .
 const modal_SKILL = document.querySelectorAll('.modal-skills');
 
 
-for (let iterator = 0; iterator < buttons_SKILL.length+1; iterator++) {
+for (let i = 0; i < buttons_SKILL.length+1; i++) {
   const function_CLOSE_MODAL = () => {
     container_BELOW_MODAL.classList.add('hidden');
-    modal_SKILL[iterator].classList.add('hidden');
+    modal_SKILL[i].classList.add('hidden');
   };
-  buttons_CLOSE_MODAL[iterator].addEventListener('click',function_CLOSE_MODAL);
+  buttons_CLOSE_MODAL[i].addEventListener('click',function_CLOSE_MODAL);
   container_BELOW_MODAL.addEventListener('click', function_CLOSE_MODAL);
   document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && !modal_SKILL[iterator].
+    if (e.key === 'Escape' && !modal_SKILL[i].
     classList.contains('hidden')) {
       function_CLOSE_MODAL();
     }
   });  
 
-  buttons_SKILL[iterator].addEventListener('click', function () {
+  buttons_SKILL[i].addEventListener('click', function () {
     container_BELOW_MODAL.classList.remove('hidden');
-    modal_SKILL[iterator].classList.remove('hidden');
+    modal_SKILL[i].classList.remove('hidden');
   });
 } // for loop 
 
