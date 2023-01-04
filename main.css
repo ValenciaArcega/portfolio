@@ -686,6 +686,7 @@ footer {
 }
 
 footer a {
+  margin-left: 4px;
   text-decoration: none;
 }
 
