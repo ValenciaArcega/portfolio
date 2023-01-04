@@ -1,7 +1,6 @@
 const root = document.querySelector(':root');
-const button_DARKMODE = document.querySelector('.btnDark');
-const button_LIGHTMODE = document.querySelector('.btnLight');
-button_LIGHTMODE.classList.add('hidden');
+const button_DARKMODE = document.querySelector('.topBar-btnDark');
+const button_LIGHTMODE = document.querySelector('.topBar-btnLight');
 
 const function_TURN_DARK = () => {
   root.style.setProperty('--white','#121212');
@@ -17,7 +16,7 @@ const function_TURN_LIGHT = () => {
   root.style.setProperty('--white','white');
   root.style.setProperty('--black','#121212');
   root.style.setProperty('--mainColor', '#4263eb');
-  root.style.setProperty('--borderNavBar','#D9D9D9');
+  root.style.setProperty('--borderNavBar','transparent');
   button_LIGHTMODE.classList.add('hidden');
   button_DARKMODE.classList.remove('hidden');
 };
