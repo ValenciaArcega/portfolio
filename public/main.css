@@ -381,23 +381,15 @@ a img {
 }
 
 
-.wrapper-tolescroFeatures {
-  width: 80%;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
-  justify-items: center;
-  align-items: center;
-}
-
-.tolescroFeatures-h5 {
-  margin: 1rem 0;
+.tolescroFeature-h5 {
+  margin: 1rem 0 0 0;
   font-size: 24px;
   letter-spacing: -1px;
   text-align: center;
 }
 
-.container-tolescro img {
-  width: 20rem;
+.tolescroFeature-img {
+  width: 21rem;
   border-radius: 12px;
 }
 
