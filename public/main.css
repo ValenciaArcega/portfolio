@@ -98,7 +98,7 @@ body {
   justify-content: center;
 }
 
-.container-welcome{
+.container-welcome {
   height: 30rem;
   width: 35rem;
   display: flex;
@@ -149,7 +149,7 @@ body {
   align-items: center;
 }
 
-.knowledges-h1, 
+.knowledges-h1,
 .projects-h1 {
   width: 90%;
   margin: 2.5rem 0;
@@ -380,10 +380,20 @@ a img {
   text-align: center;
 }
 
-.container-tolescro h5 {
-  margin-top: 2rem;
+
+.wrapper-tolescroFeatures {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  justify-items: center;
+  align-items: center;
+}
+
+.tolescroFeatures-h5 {
+  margin: 1rem 0;
   font-size: 24px;
   letter-spacing: -1px;
+  text-align: center;
 }
 
 .container-tolescro img {
@@ -426,8 +436,8 @@ a img {
 }
 
 .motionIcon-tolescro {
-  width:24px;
-  height:24px;
+  width: 24px;
+  height: 24px;
 }
 
 
@@ -715,4 +725,3 @@ footer p {
 
 
 /* TESTER */
-
