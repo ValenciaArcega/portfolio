@@ -1,3 +1,4 @@
+/*
 'use strict';
 
 const container_BELOW_MODAL = document.querySelector('.below-modal');
@@ -25,6 +26,11 @@ for (let i = 0; i < buttons_SKILL.length+1; i++) {
     modal_SKILL[i].classList.remove('hidden');
   });
 } // for loop 
+
+*/
+
+
+
 
 
 /*const belowModal = document.querySelector('.below-modal');
