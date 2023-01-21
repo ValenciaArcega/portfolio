@@ -35,13 +35,17 @@ body {
   overflow-x: hidden;
 }
 
+button,
+input {
+  font-family: 'Inter';
+}
 
 /* SECTION NAVBAR */
 .topBar {
   height: 3.3rem;
   width: 18rem;
   margin: 0;
-  padding-top: 2px;
+  padding-top: 2px; 
   border: 1px solid var(--borderNavBar);
   border-radius: 12px;
   position: fixed;
@@ -292,6 +296,115 @@ body {
   backdrop-filter: blur(8px);
   background-color: rgba(0, 0, 0, 0.3);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container-knowledgesCards {
+  padding: 0 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 1rem;
+  justify-items: center;
+  align-items: center;
+}
+
+.wrapper-cardKnowledge { 
+  width: 20rem;
+  margin: 0 1rem;
+  padding: 1rem;
+  border-radius: 12px;
+  border: 1px solid var(--borderCardContact);
+  color: var(--black);
+  background-color: var(--white);
+}
+
+.cardKnowledge-h1 {
+  padding-left: 2rem;
+  letter-spacing: -.5px;
+  font-size: 28px;
+  color: var(--mainColor);
+}
+
+.cardKnowledge-ul {
+  --max-lines: 2;
+  --line-height: 1.6;
+  margin-top: 8px;
+  padding-left: 2rem;
+  max-height: calc(var(--max-lines) * 1em * var(--line-height));
+  line-height: var(--line-height);
+  overflow: hidden;
+  position: relative;
+}
+
+.cardKnowledge-ul li {
+  list-style: circle;
+}
+
+.cardKnowledge-ul:has(+ .btn-expandCard:not(:checked))::before {
+  content: "";
+  position: absolute;
+  height: calc(1.8em * var(--line-height));
+  width: 100%;
+  bottom: 0;
+  pointer-events: none;
+  background: linear-gradient(to bottom, transparent, var(--white));
+}
+
+.btn-expandCard {
+  appearance: none;
+  min-width: 100%;
+  margin-top: 1rem;
+  padding: 10px 0;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  text-align: center;
+  color: black;
+  background-color: #e7e7e7;
+}
+
+.btn-expandCard::before {
+  content: "See All";
+}
+
+.btn-expandCard:checked::before {
+  content: "Hide Skills";
+}
+
+/* Now the has selector goes in action */
+.cardKnowledge-ul:has(+ .btn-expandCard:checked) {
+  max-height: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* SECTION EDUCATION */
