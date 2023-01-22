@@ -23,7 +23,8 @@
   --borderNavBar: #transparent;
   --borderCardContact: #d9d9d9;
 
-  --btnExpand: #f0f0f0; /* #1b1b1b */
+  --btnExpand: #f0f0f0;
+  /* #1b1b1b */
 }
 
 html {
@@ -47,7 +48,7 @@ input {
   height: 3.3rem;
   width: 18rem;
   margin: 0;
-  padding-top: 2px; 
+  padding-top: 2px;
   border: 1px solid var(--borderNavBar);
   border-radius: 12px;
   position: fixed;
@@ -185,7 +186,7 @@ input {
   align-items: center;
 }
 
-.wrapper-cardKnowledge { 
+.wrapper-cardKnowledge {
   width: 18rem;
   margin: 0 1rem;
   padding: 1rem;
@@ -333,6 +334,7 @@ a img {
 
 .container-tolescro {
   width: 100%;
+  margin-top: 2rem;
   display: flex;
   gap: 1rem;
   flex-direction: column;
@@ -348,16 +350,53 @@ a img {
 }
 
 .tolescro-heading {
-  margin: 3rem 0 .5rem 0;
+  margin: 3rem 0 0 0;
   font-size: 2.9rem;
   letter-spacing: -1px;
 }
 
 .tolescro-p {
   width: 75%;
-  font-size: 1.4rem;
+  font-size: 18px;
   text-align: center;
 }
+
+
+/* SCREENS */
+.wrapper-tolescro-screens {
+  width: 100%;
+  margin-top: 8px;
+  padding: 0 1rem 8px 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  align-items: center;
+  justify-content: center;
+  gap: 2rem 1rem;  
+}
+
+.tolescro-screens {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tolescro-screens-p {
+  font-weight: 600;
+}
+
+.tolescro-screens-img {
+  height: 420px;
+  margin-top: 6px;
+  border-radius: 18px;
+}
+
+
+
+
+
+
+
+
 
 
 .tolescroFeature-h5 {
