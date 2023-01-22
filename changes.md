@@ -1,2 +1,0 @@
-- Background color on button expand
-- Margin adjustments
