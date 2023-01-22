@@ -100,7 +100,7 @@ input {
 
 /* Im Angel */
 .main-welcome {
-  margin-top: 14rem;
+  margin-top: 10rem;
   display: flex;
   justify-content: center;
 }
@@ -331,7 +331,6 @@ a img {
 
 
 /* SECTION PROJECTS */
-
 .container-tolescro {
   width: 100%;
   margin-top: 2rem;
@@ -407,7 +406,7 @@ a img {
 }
 
 .tolescroFeature-img {
-  width: 21rem;
+  width: 18rem;
   border-radius: 12px;
 }
 
@@ -527,7 +526,8 @@ a img {
   padding: 0 1.5rem;
 }
 
-/* SECTION COMPILER */
+
+
 .container-projects h4 {
   width: 100%;
   padding: 8rem .5rem 1rem .5rem;
@@ -539,24 +539,6 @@ a img {
   background-color: rgb(18, 18, 18);
 }
 
-.wrapper-project-compiler {
-  height: 33rem;
-  width: 100%;
-  margin-top: -.5rem;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  align-items: center;
-  justify-items: center;
-  overflow-x: scroll;
-  overflow-y: hidden;
-  background-color: rgb(18, 18, 18);
-}
-
-.wrapper-project-compiler img {
-  height: 24.5rem;
-  padding: 0 1.5rem;
-  padding-bottom: 3rem;
-}
 
 
 
@@ -564,25 +546,20 @@ a img {
 
 
 
-
+/* SCROLLBAR */
 .wrapper-section-education::-webkit-scrollbar,
 .wrapper-project-UI::-webkit-scrollbar,
-.wrapper-project-schedule::-webkit-scrollbar,
-.wrapper-project-compiler::-webkit-scrollbar {
-  -webkit-appearance: none;
+.wrapper-project-schedule::-webkit-scrollbar {
+  -webkit-appearance: none;  
 }
 
 .wrapper-section-education::-webkit-scrollbar:horizontal {
-  height: 7px;
+  height: 5px;
 }
 
 .wrapper-project-UI::-webkit-scrollbar:horizontal,
 .wrapper-project-schedule::-webkit-scrollbar:horizontal {
-  height: 20px;
-}
-
-.wrapper-project-compiler::-webkit-scrollbar:horizontal {
-  height: 7px;
+  height: 15px;
 }
 
 .wrapper-section-education::-webkit-scrollbar-thumb {
@@ -596,19 +573,12 @@ a img {
 }
 
 .wrapper-project-schedule::-webkit-scrollbar-thumb {
-  border-radius: 4px;
-  background-color: rgb(18, 18, 18);
+  border-radius: 2px;
+  background-color: var(--white);
 }
-
-.wrapper-project-compiler::-webkit-scrollbar-thumb {
-  border-radius: 4px;
-  background-color: rgba(255, 255, 255, 0.44);
-}
-
 .wrapper-section-education::-webkit-scrollbar-track,
 .wrapper-project-UI::-webkit-scrollbar-track,
-.wrapper-project-schedule::-webkit-scrollbar-track,
-.wrapper-project-compiler::-webkit-scrollbar-track {
+.wrapper-project-schedule::-webkit-scrollbar-track {
   margin-left: 2rem;
   border-radius: 32px;
 }
@@ -695,6 +665,9 @@ a img {
   box-shadow: 0px 5px 15px rgba(67, 117, 197, 0.172);
 }
 
+
+
+/* Footer */
 footer {
   height: 5rem;
   margin-top: 9rem;
@@ -733,6 +706,3 @@ footer p {
 .hidden {
   display: none;
 }
-
-
-/* TESTER */
