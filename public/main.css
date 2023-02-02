@@ -370,7 +370,7 @@ a img {
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   align-items: center;
   justify-content: center;
-  gap: 2rem 1rem;  
+  gap: 2rem 1rem;
 }
 
 .tolescro-screens {
@@ -380,7 +380,8 @@ a img {
 }
 
 .tolescro-screens-p {
-  font-weight: 600;
+  text-align: left;
+  font-weight: 500;
 }
 
 .tolescro-screens-img {
@@ -550,7 +551,7 @@ a img {
 .wrapper-section-education::-webkit-scrollbar,
 .wrapper-project-UI::-webkit-scrollbar,
 .wrapper-project-schedule::-webkit-scrollbar {
-  -webkit-appearance: none;  
+  -webkit-appearance: none;
 }
 
 .wrapper-section-education::-webkit-scrollbar:horizontal {
@@ -576,6 +577,7 @@ a img {
   border-radius: 2px;
   background-color: var(--white);
 }
+
 .wrapper-section-education::-webkit-scrollbar-track,
 .wrapper-project-UI::-webkit-scrollbar-track,
 .wrapper-project-schedule::-webkit-scrollbar-track {
