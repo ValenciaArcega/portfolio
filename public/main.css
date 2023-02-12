@@ -72,17 +72,10 @@ input {
   text-decoration: none;
 }
 
-/* ICONS */
-.topBar-btn-svg,
-.topBar-anker-svg {
-  height: 24px;
-  width: 24px;
-  stroke: var(--mainColor);
-}
-
 .topBar-btnSVG {
   font-size: 24px;
   color: var(--mainColor);
+  --ionicon-stroke-width: 36px;
 }
 
 /* BUTTONS */
@@ -649,6 +642,10 @@ a img {
 
 .icon-social-card {
   width: 24px;
+  color: var(--mainColor);
+}
+.social-card-svg {
+  font-size: 24px;
   color: var(--mainColor);
 }
 
