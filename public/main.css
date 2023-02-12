@@ -80,6 +80,11 @@ input {
   stroke: var(--mainColor);
 }
 
+.topBar-btnSVG {
+  font-size: 24px;
+  color: var(--mainColor);
+}
+
 /* BUTTONS */
 .topBar-btnDark,
 .topBar-btnLight {
@@ -92,6 +97,7 @@ input {
 .topBar-anker-p {
   font-family: 'Inter';
   font-size: 12px;
+  font-weight: 500;
   margin-top: -3px;
   color: var(--mainColor);
 }
@@ -355,8 +361,9 @@ a img {
 }
 
 .tolescro-p {
-  width: 75%;
-  font-size: 18px;
+  width: 85%;
+  font-size: 20px;
+  line-height: 1.6;
   text-align: center;
 }
 
@@ -387,7 +394,7 @@ a img {
 .tolescro-screens-img {
   height: 420px;
   margin-top: 6px;
-  border-radius: 10px;
+  border-radius: 8px;
 }
 
 
