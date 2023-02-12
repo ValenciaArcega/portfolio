@@ -388,6 +388,7 @@ a img {
   height: 420px;
   margin-top: 6px;
   border-radius: 8px;
+  box-shadow: 0px 16px 15px 10px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -397,57 +398,31 @@ a img {
 
 
 
-
-
-.tolescroFeature-h5 {
-  margin: 1rem 0 0 0;
-  font-size: 24px;
-  letter-spacing: -1px;
-  text-align: center;
-}
-
-.tolescroFeature-img {
-  width: 18rem;
-  border-radius: 12px;
-}
 
 .wrapper-ankerTolescro {
-  margin-top: 2rem;
+  margin-top: 1rem;
   display: flex;
   flex-direction: column;
   gap: 8px;
   justify-items: center;
   align-items: center;
-}
-
-.wrapper-ankerTolescro img {
-  width: 32px;
-  border-radius: 4px;
+  background: none;
 }
 
 .anker-tolescro {
-  padding: 10px 28px;
+  padding: 10px 56px;
   font-size: 1.1rem;
   border-radius: 10px;
-  font-family: 'Inter', sans-serif;
   display: inline-block;
-  display: flex;
-  gap: 8px;
-  align-items: center;
   text-decoration: none;
   text-align: center;
-  color: white;
-  background-color: #4263eb;
-  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.17);
+  color: var(--white);
+  background-color: var(--mainColor);
+  box-shadow: 0px 4px 15px 10px rgba(0, 0, 0, 0.2);
 }
 
 .anker-tolescro:hover {
   background-color: #3c5cdb;
-}
-
-.motionIcon-tolescro {
-  width: 24px;
-  height: 24px;
 }
 
 
@@ -613,7 +588,7 @@ a img {
 }
 
 .card-contact {
-  height: 7.5rem;
+  height: 7.8rem;
   width: 17rem;
   margin: 0 1rem;
   border-radius: 12px;
@@ -628,7 +603,7 @@ a img {
   height: 55%;
   width: 100%;
   display: grid;
-  grid-template-columns: 80% 1fr;
+  grid-template-columns: 70% 1fr;
   align-items: center;
   justify-items: center;
 }
@@ -640,10 +615,6 @@ a img {
   letter-spacing: -1px;
 }
 
-.icon-social-card {
-  width: 24px;
-  color: var(--mainColor);
-}
 .social-card-svg {
   font-size: 24px;
   color: var(--mainColor);
