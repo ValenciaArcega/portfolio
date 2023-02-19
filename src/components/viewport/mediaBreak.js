@@ -2,7 +2,6 @@
 
 let viewPort = window.matchMedia("(max-width: 700px)");
 // dom elements
-const navBar = document.querySelector('.topBar');
 const view_DESKTOP = document.querySelector('.container-sliderTolescro')
 const view_MOBILE = document.querySelector('.wrapper-tolescro-screens')
 
