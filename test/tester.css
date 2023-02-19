@@ -1,0 +1,81 @@
+/* author: Valencia Arcega Luis Angel, 2022 */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+/*
+|| SPACING SYSTEM (px): 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+|| FONT SIZE SYSTEM (px): 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 
+*/
+
+* {
+  margin: 0 0;
+  padding: 0 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --black: #121212;
+  --white: white;
+  --mainColor: #4263eb;
+  /* l: #5c7cfa   d: #364fc7*/
+  --grayBackground: #f2f2f7;
+  --border: #D9D9D9;
+  --bgCardKnowledges: #fff;
+  --borderNavBar: #transparent;
+  --borderCardContact: #d9d9d9;
+
+  --btnExpand: #f0f0f0;
+  /* #1b1b1b */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter';
+  background-color: var(--white);
+  color: var(--black);
+  overflow-x: hidden;
+}
+
+button,
+input {
+  font-family: 'Inter';
+}
+
+
+.container-sliderTolescro {
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+
+section {
+  height: 600px;
+  width: 900px;
+  display: flex;
+}
+
+.sliderTolescro-img {
+  width: 0;
+  border-radius: 12px;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: .8;
+  transition: .5s ease;
+}
+
+.sliderTolescro-img:hover {
+  cursor: crosshair;
+  width: 200px;  
+  opacity: 1;
+  filter: contrast(120%);
+}
+
+
+
+
+.hidden {
+  display: none;
+}

@@ -43,7 +43,8 @@ input {
   font-family: 'Inter';
 }
 
-/* SECTION NAVBAR */
+/* //////////////////////////////////////////////////////////// */
+/* nav bar */
 .topBar {
   height: 3.3rem;
   width: 18rem;
@@ -95,8 +96,7 @@ input {
   color: var(--mainColor);
 }
 
-
-
+/* //////////////////////////////////////////////////////////// */
 /* Im Angel */
 .main-welcome {
   margin-top: 10rem;
@@ -141,12 +141,8 @@ input {
   line-height: 1.6;
 }
 
-
-
-
-
-
-/* SECTION KNOWLEDGES */
+/* //////////////////////////////////////////////////////////// */
+/* section knowledges */
 .container-projects {
   margin-top: 12rem;
   padding-top: 3rem;
@@ -171,11 +167,8 @@ input {
   font-size: 2.2rem;
 }
 
-
-
-
-
-/* Knowledges and Skills */
+/* //////////////////////////////////////////////////////////// */
+/* knowledges and skills */
 .container-knowledgesCards {
   padding: 0 1rem;
   display: grid;
@@ -257,22 +250,7 @@ input {
   max-height: none;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* //////////////////////////////////////////////////////////// */
 /* SECTION EDUCATION */
 .section-education {
   width: 100%;
@@ -328,8 +306,8 @@ a img {
 
 
 
-
-/* SECTION PROJECTS */
+/* //////////////////////////////////////////////////////////// */
+/* section projects */
 .container-tolescro {
   width: 100%;
   margin-top: 2rem;
@@ -360,9 +338,36 @@ a img {
   line-height: 1.6;
   text-align: center;
 }
+/* //////////////////////////////////////////////////////////// */
+/* desktop screens */
+.container-sliderTolescro {
+  display: flex;
+  justify-content: center;
+}
 
+.container-sliderTolescro section {
+  height: 600px;
+  width: 900px;
+  display: flex;
+}
 
-/* SCREENS */
+.sliderTolescro-img {
+  width: 0;
+  border-radius: 12px;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: .8;
+  transition: .5s ease;
+}
+
+.sliderTolescro-img:hover {
+  cursor: crosshair;
+  width: 200px;  
+  opacity: 1;
+  filter: contrast(120%);
+}
+/* //////////////////////////////////////////////////////////// */
+/* mobile screens */
 .wrapper-tolescro-screens {
   width: 100%;
   margin-top: 8px;
