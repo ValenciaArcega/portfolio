@@ -18,11 +18,14 @@
   --mainColor: #4263eb;
   /* l: #5c7cfa   d: #364fc7*/
   --grayBackground: #f2f2f7;
-  --border: #D9D9D9;
   --bgCardKnowledges: #fff;
+  /* borders */
+  --border: #D9D9D9;
   --borderNavBar: #transparent;
   --borderCardContact: #d9d9d9;
-
+  /* buttons */
+  --btnTolescro: #E1E7F7;
+  --btnTolescroText: #0C80FE;
   --btnExpand: #f0f0f0;
   /* #1b1b1b */
 }
@@ -47,14 +50,16 @@ input {
   width: 8px;
   background-color: var(--white)
 }
+
 ::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   border-radius: 8px;
 }
+
 ::-webkit-scrollbar-thumb {
   border-radius: 4px;
   background-color: var(--mainColor);
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
 }
 
 /* //////////////////////////////////////////////////////////// */
@@ -346,12 +351,13 @@ a img {
 }
 
 .tolescro-p,
-.tolescro-screens-p  {
+.tolescro-screens-p {
   width: 85%;
   font-size: 20px;
   line-height: 1.6;
   text-align: center;
 }
+
 /* //////////////////////////////////////////////////////////// */
 /* desktop screens */
 .container-sliderTolescro {
@@ -376,10 +382,11 @@ a img {
 
 .sliderTolescro-img:hover {
   cursor: crosshair;
-  width: 200px;  
+  width: 200px;
   opacity: 1;
   filter: contrast(120%);
 }
+
 /* //////////////////////////////////////////////////////////// */
 /* mobile screens */
 .wrapper-tolescro-screens {
@@ -434,9 +441,9 @@ a img {
   display: inline-block;
   text-decoration: none;
   text-align: center;
-  color: var(--white);
-  background-color: var(--mainColor);
-  box-shadow: 0px 4px 12px 10px rgba(0, 0, 0, 0.15);
+  color: var(--btnTolescroText);
+  background-color: var(--btnTolescro);
+  box-shadow: 0 10px 15px -2px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -491,34 +498,40 @@ a img {
   -webkit-appearance: none;
   background-color: #121212;
 }
+
 .wrapper-project-UI::-webkit-scrollbar:horizontal {
   height: 12px;
 }
 
 /* the button of scrollbar */
-.wrapper-project-UI::-webkit-scrollbar-thumb  {
+.wrapper-project-UI::-webkit-scrollbar-thumb {
   border-radius: 6px;
   background-color: #404040;
 }
+
 /* the background of scrollbar */
 .wrapper-project-UI::-webkit-scrollbar-track {
   margin-left: 1rem;
   background-color: #121212;
 }
+
 /* /////////////////////////////////////////////////// */
 .wrapper-section-education::-webkit-scrollbar {
   background-color: var(--white);
 }
+
 .wrapper-section-education::-webkit-scrollbar:horizontal {
   height: 6px;
 }
+
 .wrapper-section-education::-webkit-scrollbar-thumb {
   border-radius: 6px;
   background-color: #69696938;
 }
+
 .wrapper-section-education::-webkit-scrollbar-track {
   border-radius: 0;
-  background-color: var(--white);  
+  background-color: var(--white);
 }
 
 
