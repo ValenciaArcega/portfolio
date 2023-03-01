@@ -1,7 +1,6 @@
 'use strict';
 
 let root = document.querySelector(':root');
-
 const button_DARKMODE = document.querySelector('.topBar-btnDark');
 const button_LIGHTMODE = document.querySelector('.topBar-btnLight');
 
