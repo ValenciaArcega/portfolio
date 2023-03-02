@@ -290,13 +290,13 @@ input {
 
 .wrapper-section-education {
   height: 11rem;
-  width: 100%;
+  width: 80%;
+  margin-top: 1.5rem;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  gap: 2rem 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
   align-items: center;
   justify-items: center;
-  overflow-x: scroll;
-  overflow-y: hidden;
 }
 
 .card-education {
@@ -513,25 +513,6 @@ a img {
 .wrapper-UI__projects-web::-webkit-scrollbar-track {
   margin-left: 1rem;
   background-color: #121212;
-}
-
-/* /////////////////////////////////////////////////// */
-.wrapper-section-education::-webkit-scrollbar {
-  background-color: var(--white);
-}
-
-.wrapper-section-education::-webkit-scrollbar:horizontal {
-  height: 6px;
-}
-
-.wrapper-section-education::-webkit-scrollbar-thumb {
-  border-radius: 6px;
-  background-color: #69696938;
-}
-
-.wrapper-section-education::-webkit-scrollbar-track {
-  border-radius: 0;
-  background-color: var(--white);
 }
 
 
