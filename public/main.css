@@ -460,7 +460,7 @@ a img {
 .wrapper-UI__projects-java,
 .wrapper-UI__projects-web {
   height: 31rem;
-  margin-top: -38px;
+  margin-top: -28px;
   width: 100%;
   display: grid;
   gap: 8px;
@@ -577,7 +577,7 @@ a img {
 .card-contact button,
 .card-contact a {
   height: 2.2rem;
-  width: 255px;
+  width: 75%;
   border-radius: 8px;
   font-size: 1.1rem;
   font-family: 'Inter';
