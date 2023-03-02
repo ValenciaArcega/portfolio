@@ -377,7 +377,7 @@ a img {
 }
 
 .tolescro__screen-p {
-  font-size: 17px;
+  font-size: 20px;
 }
 
 .tolescro__screen-img {
@@ -452,10 +452,11 @@ a img {
 }
 
 
-.uiJava-p {
+.UI__projects__p-java,
+.UI__projects__p-web {
   width: 100%;
-  margin-top: -.1rem;
-  padding-bottom: .2rem;
+  margin-top: -8px;
+  padding: 1rem 6px .2rem 6px;
   font-size: 1.3rem;
   text-align: center;
   position: relative;
@@ -463,45 +464,53 @@ a img {
   background-color: rgb(18, 18, 18);
 }
 
-.wrapper-project-UI {
+.wrapper-UI__projects-java,
+.wrapper-UI__projects-web {
   height: 31rem;
+  margin-top: -8px;
   width: 100%;
-  margin-top: -1.3rem;
-  margin-bottom: -.5rem;
   display: grid;
   gap: 8px;
   grid-template-columns: repeat(8, 1fr);
   align-items: center;
   justify-items: center;
   overflow-x: scroll;
-  overflow-y: hidden;
   background-color: rgb(18, 18, 18);
 }
 
-.wrapper-project-UI img {
+.wrapper-UI__projects-web {
+  grid-template-columns: repeat(9, 1fr);
+}
+
+.wrapper-UI__projects-java img,
+.wrapper-UI__projects-web img {
   width: 210px;
   margin: 0 1.2rem;
 }
 
 /* /////////////////////////////////////////////////// */
-/* scrollbar for project and education */
-.wrapper-project-UI::-webkit-scrollbar {
+/* scrollbar for projects and education */
+.wrapper-UI__projects-java::-webkit-scrollbar,
+.wrapper-UI__projects-web::-webkit-scrollbar {
   -webkit-appearance: none;
   background-color: #121212;
 }
 
-.wrapper-project-UI::-webkit-scrollbar:horizontal {
+.wrapper-UI__projects-java::-webkit-scrollbar:horizontal,
+.wrapper-UI__projects-web::-webkit-scrollbar:horizontal {
   height: 12px;
 }
 
 /* the button of scrollbar */
-.wrapper-project-UI::-webkit-scrollbar-thumb {
+.wrapper-UI__projects-java::-webkit-scrollbar-thumb,
+.wrapper-UI__projects-web::-webkit-scrollbar-thumb {
   border-radius: 6px;
   background-color: #404040;
 }
 
 /* the background of scrollbar */
-.wrapper-project-UI::-webkit-scrollbar-track {
+.wrapper-UI__projects-java::-webkit-scrollbar-track,
+.wrapper-UI__projects-web::-webkit-scrollbar-track {
   margin-left: 1rem;
   background-color: #121212;
 }
@@ -595,7 +604,7 @@ a img {
 .card-contact a {
   height: 30%;
   width: 220px;
-  padding: 6.4px 32px;
+  padding: 8.4px 32px;
   border-radius: 8px;
   font-size: 1.1rem;
   font-family: 'Inter';
