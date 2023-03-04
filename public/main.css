@@ -135,7 +135,12 @@ input {
   height: 140px;
   width: 140px;
   border-radius: 300px;
+  transition: box-shadow .2s, transform;
   box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.35);
+}
+
+.welcome-img:hover {
+  box-shadow: 0 0 30px rgba(0, 0, 0, .7)
 }
 
 .wrapper-welcome-text {
