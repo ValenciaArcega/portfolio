@@ -1,9 +1,9 @@
 'use strict';
 
-const buttonShowMyMail = document.querySelector('.btnShowMail');
-let texto = document.querySelector('#myEmail');
+const btnShowMail = document.querySelector('.btnShowMail');
+const txt = document.querySelector('#myEmail');
 
-buttonShowMyMail.addEventListener('click', function () {
-  buttonShowMyMail.classList.add('hidden');
-  texto.classList.remove('hidden');
+btnShowMail.addEventListener('click', function () {
+  txt.classList.remove('hidden');
+  btnShowMail.classList.add('hidden');
 });

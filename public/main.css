@@ -140,7 +140,7 @@ input {
 }
 
 .welcome-img:hover {
-  box-shadow: 0 0 30px rgba(0, 0, 0, .7)
+  box-shadow: 0 0 30px rgba(0, 0, 0, .6)
 }
 
 .wrapper-welcome-text {
