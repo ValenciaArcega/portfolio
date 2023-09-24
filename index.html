@@ -237,10 +237,31 @@
     </a>
   </nav>
 
-  <script src="src/components/darkMode/appearance.js"></script>
-  <script src="src/components/cards/educationCards.js"></script>
-  <script src="src/components/buttons/showMail.js"></script>
-  <script src="src/components/transitions/profilePhoto.js"></script>
+  <nav class="navBar-desktop">
+    <img src="src/assets/icons/nav-bar-desktop.png" alt="navigation bar icon">
+    
+    <section class="navBar-desktop-options">
+      <a class="topBar-anker" href="#sk">Skills</a>
+
+      <a class="topBar-anker" href="#sp">Projects</a>
+
+      <a class="topBar-anker" href="#ss">Contact</a>
+
+      <button type="button" title="Button turn the dark mode" class="navBar-desktop-btnDark">
+        <ion-icon class="navbar-desktop-ion" name="bed-outline"></ion-icon>
+      </button>
+  
+      <button type="button" title="Button turn the light mode" class="navBar-desktop-btnLight hidden">
+        <ion-icon class="navbar-desktop-ion" name="sunny-outline"></ion-icon>
+      </button>
+    </section>
+  </nav>
+
+  <script src="src/scripts/darkMode/appearance.js"></script>
+  <script src="src/scripts/cards/educationCards.js"></script>
+  <script src="src/scripts/buttons/showMail.js"></script>
+  <script src="src/scripts/transitions/profilePhoto.js"></script>
+  <script src="src/scripts/viewport/navBar.js"></script>
 </body>
 
 </html>

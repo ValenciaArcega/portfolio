@@ -28,6 +28,8 @@
   --btnTolescroText: #0C80FE;
   --btnExpand: #f0f0f0;
   /* #1b1b1b */
+
+  --bg-navbar-desktop: #ffffff33;
 }
 
 html {
@@ -97,12 +99,24 @@ input {
   --ionicon-stroke-width: 36px;
 }
 
+.navbar-desktop-ion {
+  font-size: 24px;
+  color: var(--black);
+  --ionicon-stroke-width: 36px;
+}
+
 /* BUTTONS */
 .topBar-btnDark,
 .topBar-btnLight {
   border: none;
   background: none;
   margin-top: -2px;
+}
+
+.navBar-desktop-btnLight,
+.navBar-desktop-btnDark {
+  border: none;
+  background: none;
 }
 
 .topBar-btn-p,
@@ -114,6 +128,39 @@ input {
   color: var(--mainColor);
 }
 
+
+/* NavBar Desktop */
+.navBar-desktop {
+  height: 4rem;
+  width: 100%;
+  padding: 0 1rem;
+  border-bottom: 1.4px solid var(--borderCardContact);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: grid;
+  grid-template-columns: 10% 80%;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);  
+  background-color: var(--bg-navbar-desktop);
+}
+
+.navBar-desktop > img {
+  align-self: center;
+  justify-self: center;
+  height: 40px;
+}
+
+.navBar-desktop-options {
+  display: flex;
+  justify-self: flex-end;
+  align-items: center;
+  gap: 32px;  
+}
+.navBar-desktop-options > a {
+  font-weight: 600;
+  color: var(--black) !important;
+}
 /* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 .main-welcome {
   margin-top: 10rem;
@@ -140,7 +187,7 @@ input {
 }
 
 .welcome-img:hover {
-  box-shadow: 0 0 30px rgba(0, 0, 0, .6)
+  box-shadow: 0 0 30px rgba(0, 0, 0, .4)
 }
 
 .wrapper-welcome-text {
@@ -651,7 +698,6 @@ footer p {
 .textBlue-onBlack {
   color: #B1BFF7
 }
-
 
 .hidden {
   display: none;
