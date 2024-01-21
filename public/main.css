@@ -80,8 +80,8 @@ input {
   grid-template-columns: repeat(4, 1fr);
   align-items: center;
   justify-items: center;
-  -webkit-backdrop-filter: blur(12px);
-  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
   box-shadow: 0 5px 12px rgba(0, 0, 0, 0.065);
 }
 
@@ -141,11 +141,11 @@ input {
   display: grid;
   grid-template-columns: 10% 80%;
   -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(5px);  
+  backdrop-filter: blur(5px);
   background-color: var(--bg-navbar-desktop);
 }
 
-.navBar-desktop > img {
+.navBar-desktop>img {
   align-self: center;
   justify-self: center;
   height: 40px;
@@ -155,12 +155,14 @@ input {
   display: flex;
   justify-self: flex-end;
   align-items: center;
-  gap: 32px;  
+  gap: 32px;
 }
-.navBar-desktop-options > a {
+
+.navBar-desktop-options>a {
   font-weight: 600;
   color: var(--black) !important;
 }
+
 /* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 .main-welcome {
   margin-top: 10rem;
@@ -231,19 +233,81 @@ input {
   grid-column: -1/1;
 }
 
+.knowledges-h1 {
+  color: #fff;
+  font-weight: 500;
+}
+
 .projects-h1 {
   font-size: 3.8rem;
 }
 
 /* ////////////////////////////////// */
 .container-knowledgesCards {
-  padding: 0 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
+.sectionKnowledges {
+  width: 100%;
+  padding: 1rem 0 3rem 0;
+  display: flex;
+  gap: 2rem 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #121212;
+}
+
+.cardKnowledges {
+  height: 80%;
+  padding: 12px 6px;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
+  width: 100%;
+  align-items: center;
+  justify-items: center;
+  background-color: #121212;
+  background: conic-gradient(from 90deg at 50% 50%, #121212 50%, #121212 50%), radial-gradient(rgba(255, 255, 255, 0.529) 0%, transparent 80%);
+}
+
+.cardKnowledges-logos {
+  width: 19rem;
+  height: 19rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.cardKnowledgesBorder {
+  left: 1/2;
+  top: 0;
+  width: 90%;
+  height: 1px;
+  user-select: none;
+  pointer-events: none;
+  position: absolute;
+  translate: (1/2, 1/2);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0.0) 0%, rgba(198, 198, 198, 0.67) 50%, rgba(0, 0, 0, 0) 100%);
+}
+
+.cardKnowledgesBg {
+  left: 1/2;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  user-select: none;
+  pointer-events: none;
+  position: absolute;
+  translate: (1/2, 1/2);
+  background: conic-gradient(from 90deg at 50% 50%, #00000000 50%, #23222200 50%), radial-gradient(rgb(193 193 193 / 10%) 0%, transparent 80%);
+}
 
 .wrapper-knowledges {
   width: 70%;
@@ -252,6 +316,13 @@ input {
   gap: 2rem 10px;
   justify-items: center;
   align-items: center;
+}
+
+.knowledge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
 }
 
 .wrapper-cardKnowledge {
@@ -521,7 +592,7 @@ a img {
   font-size: 1.3rem;
   text-align: center;
   position: relative;
-  color: #fff;
+  color: #b8b8b8;
   background-color: rgb(18, 18, 18);
 }
 
@@ -671,7 +742,7 @@ a img {
 }
 
 .card-contact button:hover,
-.card-contact a:hover { 
+.card-contact a:hover {
   transform: scale(.96, .96);
 }
 
