@@ -244,6 +244,7 @@ input {
 
 /* ////////////////////////////////// */
 .container-knowledgesCards {
+  margin-top: 4rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -252,7 +253,7 @@ input {
 
 .sectionKnowledges {
   width: 100%;
-  padding: 1rem 0 3rem 0;
+  padding: 3rem 0 8rem 0;
   display: flex;
   gap: 2rem 0;
   flex-direction: column;
@@ -309,92 +310,11 @@ input {
   background: conic-gradient(from 90deg at 50% 50%, #00000000 50%, #23222200 50%), radial-gradient(rgb(193 193 193 / 10%) 0%, transparent 80%);
 }
 
-.wrapper-knowledges {
-  width: 70%;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
-  gap: 2rem 10px;
-  justify-items: center;
-  align-items: center;
-}
-
 .knowledge {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 8px;
-}
-
-.wrapper-cardKnowledge {
-  width: 18rem;
-  margin: 0 1rem;
-  padding: 1rem;
-  border-radius: 12px;
-  border: 1px solid var(--borderCardContact);
-  color: var(--black);
-  background-color: var(--white);
-}
-
-.cardKnowledge-h1 {
-  padding-left: 12px;
-  letter-spacing: -.5px;
-  font-size: 28px;
-  color: var(--mainColor);
-}
-
-.cardKnowledge-ul {
-  --max-lines: 2;
-  --line-height: 1.6;
-  margin-top: 8px;
-  padding-left: 2rem;
-  max-height: calc(var(--max-lines) * 1em * var(--line-height));
-  line-height: var(--line-height);
-  overflow: hidden;
-  position: relative;
-}
-
-.cardKnowledge-ul li {
-  list-style: circle;
-}
-
-.cardKnowledge-ul:has(+ .btn-expandCard:not(:checked))::before {
-  content: "";
-  position: absolute;
-  height: calc(1.6em * var(--line-height));
-  width: 100%;
-  bottom: 0;
-  /* pointer-events: none; */
-  background: linear-gradient(to bottom, transparent, var(--white));
-}
-
-.btn-expandCard {
-  appearance: none;
-  min-width: 100%;
-  min-height: 2.3rem;
-  margin-top: 1rem;
-  padding: 4px 12px;
-  border-radius: 8px;
-  font-size: 16px;
-  font-weight: 400;
-  /* cursor: pointer; */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--black);
-  background-color: var(--btnExpand);
-}
-
-.btn-expandCard::before {
-  content: "See All";
-}
-
-.btn-expandCard:checked::before {
-  content: "Hide Skills";
-}
-
-/* Now the has selector goes in action */
-.cardKnowledge-ul:has(+ .btn-expandCard:checked) {
-  max-height: none;
 }
 
 /* //////////////////////////////////////////////////////////// */
